@@ -1,0 +1,4 @@
+@E: CD200 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd":76:12:76:15|Misspelled variable, signal or procedure name?
+@E: Parse errors encountered - exiting
+@E::VHDL compiler failed
+
