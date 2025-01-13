@@ -10,14 +10,13 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @N:"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":25:7:25:10|Top entity is set to MAIN.
 VHDL syntax check successful!
 @N: CD231 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd changed - recompiling
 File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd changed - recompiling
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 75MB)
 
 
 Process completed successfully.
-# Fri Jan 03 13:48:25 2025
+# Mon Jan 13 23:21:33 2025
 
 ###########################################################]
 Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -36,7 +35,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Fri Jan 03 13:48:25 2025
+# Mon Jan 13 23:21:33 2025
 
 ###########################################################]
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ps
@@ -51,7 +50,6 @@ File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PR
 File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd changed - recompiling
 File C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40_components_syn.vhd changed - recompiling
 VHDL syntax check successful!
-File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd changed - recompiling
 File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd changed - recompiling
 @N: CD231 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":25:7:25:10|Synthesizing work.main.behavioral.
@@ -112,7 +110,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 
 
 Process completed successfully.
-# Fri Jan 03 13:48:25 2025
+# Mon Jan 13 23:21:33 2025
 
 ###########################################################]
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
@@ -136,7 +134,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Fri Jan 03 13:48:25 2025
+# Mon Jan 13 23:21:33 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -155,7 +153,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Jan 03 13:48:25 2025
+# Mon Jan 13 23:21:33 2025
 
 ###########################################################]
 @END
@@ -165,6 +163,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Jan 03 13:48:25 2025
+# Mon Jan 13 23:21:33 2025
 
 ###########################################################]

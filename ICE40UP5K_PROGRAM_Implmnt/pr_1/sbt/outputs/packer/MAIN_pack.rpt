@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jan 3 2025 14:08:43
+* File Generated:     Jan 13 2025 23:22:21
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 1 seconds
+    Runtime: 0 seconds
 
 Device Info:
 ------------
@@ -27,8 +27,8 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  628
-    LUTs:                 1364
+    FFs:                  594
+    LUTs:                 1270
     RAMs:                 0
     IOBs:                 18
     GBs:                  6
@@ -46,12 +46,12 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1449/5280
-        Combinational Logic Cells: 821      out of   5280      15.5492%
-        Sequential Logic Cells:    628      out of   5280      11.8939%
-        Logic Tiles:               286      out of   660       43.3333%
+    Total Logic Cells: 1385/5280
+        Combinational Logic Cells: 791      out of   5280      14.9811%
+        Sequential Logic Cells:    594      out of   5280      11.25%
+        Logic Tiles:               267      out of   660       40.4545%
     Registers: 
-        Logic Registers:           628      out of   5280      11.8939%
+        Logic Registers:           594      out of   5280      11.25%
         IO Registers:              0        out of   480       0
     Block RAMs:                    0        out of   30        0%
     Warm Boots:                    0        out of   1         0%
@@ -110,7 +110,7 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                   
     -------------  -------  ---------  ------  -----------                                   
-    0              2        IO         628     red_c_g                                       
+    0              2        IO         594     red_c_g                                       
     2              0                   2       delay_tr_input_c_g                            
     6              2                   2       delay_hc_input_c_g                            
     1              0                   33      current_shift_inst.timer_s1.N_162_i_g         

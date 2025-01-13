@@ -155,7 +155,7 @@ begin
     begin
 
         -- Normalize and adjust the phase shift input for PI controller
-        control_input <=  (elapsed_time_ns_s1/2 - elapsed_time_ns_phase)/8; -- Adjusting the phase shift
+        control_input <=  (elapsed_time_ns_s1/2 - elapsed_time_ns_phase)/1048576; -- Adjusting the phase shift change from 8 to 1048576
 
        
     end process;
