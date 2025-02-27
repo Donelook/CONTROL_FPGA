@@ -18,6 +18,12 @@ Runtime Summary:
 		*Library: work, Entity: PWM_GENERATOR, Architecture: behavioral
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: MAIN, Architecture: behavioral
-			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: ICE40_MAIN_PROGRAM_100MHZ_pll, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: SB_DFF, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: SB_RGBA_DRV, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: SB_HFOSC, Architecture: syn_black_box
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time

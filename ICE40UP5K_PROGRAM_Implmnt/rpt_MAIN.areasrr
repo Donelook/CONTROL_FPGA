@@ -213,18 +213,18 @@ Instance path:   MAIN.phase_controller_0
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     142                23.9 %               
+FLOPS     138                23.2 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller_0:	142 (5.87 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller_0:	138 (5.70 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       155                14.4 %               
+LUTS       151                14 %                 
 CARRYS     106                15.4 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_0:	261 (10.79 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_0:	257 (10.62 % Utilization)
 
 
 IO PADS
@@ -250,10 +250,10 @@ Total SEQUENTIAL ELEMENTS in the block phase_controller_0.stoper_1:	65 (2.69 % U
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       71                 6.6 %                
+LUTS       70                 6.51 %               
 CARRYS     53                 7.68 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block phase_controller_0.stoper_1:	124 (5.13 % Utilization)
+Total COMBINATIONAL LOGIC in the block phase_controller_0.stoper_1:	123 (5.08 % Utilization)
 
 
 IO PADS
@@ -300,18 +300,18 @@ Instance path:   MAIN.phase_controller_1
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     139                23.4 %               
+FLOPS     143                24.1 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller_1:	139 (5.75 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller_1:	143 (5.91 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       151                14 %                 
+LUTS       155                14.4 %               
 CARRYS     106                15.4 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_1:	257 (10.62 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_1:	261 (10.79 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   stoper   ########

@@ -1,4 +1,15 @@
-@E: CD200 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd":76:12:76:15|Misspelled variable, signal or procedure name?
-@E: Parse errors encountered - exiting
-@E::VHDL compiler failed
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":25:9:25:47|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":26:9:26:47|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":27:9:27:47|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":28:9:28:55|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":29:9:29:56|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":30:9:30:73|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":31:9:31:55|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":32:9:32:73|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":33:9:33:55|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":34:9:34:60|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":35:9:35:56|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG1167 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":36:9:36:57|Module SB_PLL40_CORE is undefined, hence parameters cannot be found
+@E: CG389 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":11:14:11:47|Reference to undefined module SB_PLL40_CORE
+@E::Errors, while synthesis.
 

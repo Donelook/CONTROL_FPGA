@@ -268,10 +268,10 @@ begin
             delay_tr        => measured_delay_tr,  -- Use measured delay for TR from delay_measurement
             S1              => s1_phy,                 -- Output to transistor S1
             S2              => s2_phy,                 -- Output to transistor S2
-        	T01  			=> OPEN,
-        	T12  			=> OPEN,    			
-        	T23  			=> OPEN,    			
-        	T45  			=> OPEN   			
+        	T01  			=> T01,
+        	T12  			=> T12,    			
+        	T23  			=> T23,    			
+        	T45  			=> T45    			
         );
 	-- Two D flip flop to prevent metastability
 	SB_DFF_inst_PH2_MAX_D1: SB_DFF
@@ -311,10 +311,10 @@ begin
             delay_tr        => measured_delay_tr,  -- Same measured delay for TR
             S1              => s3_phy,                 -- Output to transistor S3
             S2              => s4_phy,                -- Output to transistor S4
-        	T01  			=> T01,
-        	T12  			=> T12,    			
-        	T23  			=> T23,    			
-        	T45  			=> T45   
+        	T01  			=> OPEN,
+        	T12  			=> OPEN,    			
+        	T23  			=> OPEN,    			
+        	T45  			=> OPEN   
             -- Error output signal
             
         );
