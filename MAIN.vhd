@@ -55,8 +55,8 @@ entity MAIN is
         T01  			: out std_logic;   -- test signal
         T12    			: out std_logic;   -- test signal
         T23    			: out std_logic;   -- test signal
-        T45    			: out std_logic;   -- test signal
-        clock_output		: out std_logic
+        T45    			: out std_logic		-- test signal
+      --  clock_output		: out std_logic
     );
 end MAIN;
 
@@ -218,7 +218,7 @@ begin
             PLLOUTGLOBAL => clk_100mhz,     -- 100 MHz output clock
             RESET        => not reset        	-- Reset input for PLL
         );
-   		clock_output <= clk_100mhz;
+   	--	clock_output <= clk_100mhz;
 
     -- Instantiate delay_measurement module for measuring delay_tr and delay_hc
     delay_measurement_inst: delay_measurement

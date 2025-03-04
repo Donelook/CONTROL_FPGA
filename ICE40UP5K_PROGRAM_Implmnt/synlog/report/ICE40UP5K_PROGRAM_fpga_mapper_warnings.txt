@@ -64,7 +64,7 @@
 @W: BN132 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\pi_controller.vhd":35:8:35:9|Removing instance current_shift_inst.PI_CTRL.error_control[29] (in view: work.MAIN(behavioral)) because it is equivalent to instance current_shift_inst.PI_CTRL.error_control[14] (in view: work.MAIN(behavioral)). To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\pi_controller.vhd":35:8:35:9|Removing instance current_shift_inst.PI_CTRL.error_control[30] (in view: work.MAIN(behavioral)) because it is equivalent to instance current_shift_inst.PI_CTRL.error_control[14] (in view: work.MAIN(behavioral)). To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\pi_controller.vhd":35:8:35:9|Removing instance current_shift_inst.PI_CTRL.error_control[31] (in view: work.MAIN(behavioral)) because it is equivalent to instance current_shift_inst.PI_CTRL.error_control[14] (in view: work.MAIN(behavioral)). To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN137 :|Found combinational loop during mapping at net N_1985
+@W: BN137 :|Found combinational loop during mapping at net N_1989
 @W: BN137 :|Found combinational loop during mapping at net measured_delay_tr[13]
 @W: BN137 :|Found combinational loop during mapping at net measured_delay_tr[12]
 @W: BN137 :|Found combinational loop during mapping at net measured_delay_tr[11]

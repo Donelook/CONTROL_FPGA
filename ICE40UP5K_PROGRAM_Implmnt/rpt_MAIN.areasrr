@@ -11,7 +11,7 @@ Name      Total elements     Utilization     Notes
 --------------------------------------------------
 FLOPS     594                100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN:	594 (24.56 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN:	594 (24.57 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -20,15 +20,15 @@ Name       Total elements     Utilization     Notes
 LUTS       1075               100 %                
 CARRYS     690                100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN:	1765 (72.96 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN:	1765 (72.99 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     21                 100 %                
+PADS     20                 100 %                
 =================================================
-Total IO PADS in the block MAIN:	21 (0.87 % Utilization)
+Total IO PADS in the block MAIN:	20 (0.83 % Utilization)
 
 -------------------------------------------------------------------
 ########   Utilization report for  cell:   CURRENT_SHIFT   ########
@@ -49,13 +49,13 @@ Name       Total elements     Utilization     Notes
 LUTS       454                42.2 %               
 CARRYS     281                40.7 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.CURRENT_SHIFT:	735 (30.38 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.CURRENT_SHIFT:	735 (30.40 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     1                  4.76 %               
+PADS     1                  5 %                  
 =================================================
 Total IO PADS in the block MAIN.CURRENT_SHIFT:	1 (0.04 % Utilization)
 
@@ -99,13 +99,13 @@ Name       Total elements     Utilization     Notes
 LUTS       118                11 %                 
 CARRYS     57                 8.26 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block CURRENT_SHIFT.timer_2_1:	175 (7.23 % Utilization)
+Total COMBINATIONAL LOGIC in the block CURRENT_SHIFT.timer_2_1:	175 (7.24 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     1                  4.76 %               
+PADS     1                  5 %                  
 =================================================
 Total IO PADS in the block CURRENT_SHIFT.timer_2_1:	1 (0.04 % Utilization)
 
@@ -161,7 +161,7 @@ Name       Total elements     Utilization     Notes
 LUTS       208                19.3 %               
 CARRYS     114                16.5 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.delay_measurement:	322 (13.31 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.delay_measurement:	322 (13.32 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   timer_2   ########
@@ -182,7 +182,7 @@ Name       Total elements     Utilization     Notes
 LUTS       103                9.58 %               
 CARRYS     57                 8.26 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block delay_measurement.timer_2:	160 (6.61 % Utilization)
+Total COMBINATIONAL LOGIC in the block delay_measurement.timer_2:	160 (6.62 % Utilization)
 
 ---------------------------------------------------------------
 ########   Utilization report for  cell:   timer_2_0   ########
@@ -203,7 +203,7 @@ Name       Total elements     Utilization     Notes
 LUTS       103                9.58 %               
 CARRYS     57                 8.26 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block delay_measurement.timer_2_0:	160 (6.61 % Utilization)
+Total COMBINATIONAL LOGIC in the block delay_measurement.timer_2_0:	160 (6.62 % Utilization)
 
 ------------------------------------------------------------------------
 ########   Utilization report for  cell:   phase_controller_0   ########
@@ -215,7 +215,7 @@ Name      Total elements     Utilization     Notes
 --------------------------------------------------
 FLOPS     138                23.2 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller_0:	138 (5.70 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller_0:	138 (5.71 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -224,13 +224,13 @@ Name       Total elements     Utilization     Notes
 LUTS       151                14 %                 
 CARRYS     106                15.4 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_0:	257 (10.62 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_0:	257 (10.63 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     2                  9.52 %               
+PADS     2                  10 %                 
 =================================================
 Total IO PADS in the block MAIN.phase_controller_0:	2 (0.08 % Utilization)
 
@@ -253,13 +253,13 @@ Name       Total elements     Utilization     Notes
 LUTS       70                 6.51 %               
 CARRYS     53                 7.68 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block phase_controller_0.stoper_1:	123 (5.08 % Utilization)
+Total COMBINATIONAL LOGIC in the block phase_controller_0.stoper_1:	123 (5.09 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     1                  4.76 %               
+PADS     1                  5 %                  
 =================================================
 Total IO PADS in the block phase_controller_0.stoper_1:	1 (0.04 % Utilization)
 
@@ -282,13 +282,13 @@ Name       Total elements     Utilization     Notes
 LUTS       70                 6.51 %               
 CARRYS     53                 7.68 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block phase_controller_0.stoper_2:	123 (5.08 % Utilization)
+Total COMBINATIONAL LOGIC in the block phase_controller_0.stoper_2:	123 (5.09 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     1                  4.76 %               
+PADS     1                  5 %                  
 =================================================
 Total IO PADS in the block phase_controller_0.stoper_2:	1 (0.04 % Utilization)
 
@@ -308,10 +308,10 @@ Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller_1:	143 (5.91 % Util
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       155                14.4 %               
+LUTS       157                14.6 %               
 CARRYS     106                15.4 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_1:	261 (10.79 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_1:	263 (10.88 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   stoper   ########
@@ -329,10 +329,10 @@ Total SEQUENTIAL ELEMENTS in the block phase_controller_1.stoper:	65 (2.69 % Uti
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       70                 6.51 %               
+LUTS       71                 6.6 %                
 CARRYS     53                 7.68 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block phase_controller_1.stoper:	123 (5.08 % Utilization)
+Total COMBINATIONAL LOGIC in the block phase_controller_1.stoper:	124 (5.13 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   stoper_0   ########
@@ -350,10 +350,10 @@ Total SEQUENTIAL ELEMENTS in the block phase_controller_1.stoper_0:	65 (2.69 % U
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       70                 6.51 %               
+LUTS       71                 6.6 %                
 CARRYS     53                 7.68 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block phase_controller_1.stoper_0:	123 (5.08 % Utilization)
+Total COMBINATIONAL LOGIC in the block phase_controller_1.stoper_0:	124 (5.13 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

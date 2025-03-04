@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Feb 27 2025 18:59:22
+* File Generated:     Mar 2 2025 23:50:57
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 1 seconds
+    Runtime: 0 seconds
 
 Device Info:
 ------------
@@ -28,9 +28,9 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  594
-    LUTs:                 1270
+    LUTs:                 1269
     RAMs:                 0
-    IOBs:                 18
+    IOBs:                 17
     GBs:                  6
     PLLs:                 1
     Warm Boots:           0
@@ -46,10 +46,10 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1385/5280
-        Combinational Logic Cells: 791      out of   5280      14.9811%
+    Total Logic Cells: 1384/5280
+        Combinational Logic Cells: 790      out of   5280      14.9621%
         Sequential Logic Cells:    594      out of   5280      11.25%
-        Logic Tiles:               300      out of   660       45.4545%
+        Logic Tiles:               294      out of   660       44.5455%
     Registers: 
         Logic Registers:           594      out of   5280      11.25%
         IO Registers:              0        out of   480       0
@@ -66,7 +66,7 @@ Logic Resource Utilization:
     FILTER_50NSs:                  0        out of   2         0%
     Pins:
         Input Pins:                8        out of   39        20.5128%
-        Output Pins:               10       out of   39        25.641%
+        Output Pins:               9        out of   39        23.0769%
         InOut Pins:                0        out of   39        0%
     Global Buffers:                6        out of   8         75%
     PLLs:                          1        out of   1         100%
@@ -75,7 +75,7 @@ IO Bank Utilization:
 --------------------
     Bank 3: 0        out of   0         0%
     Bank 1: 0        out of   0         0%
-    Bank 0: 9        out of   17        52.9412%
+    Bank 0: 8        out of   17        47.0588%
     Bank 2: 9        out of   22        40.9091%
 
 Detailed I/O Info:
@@ -104,7 +104,6 @@ Detailed I/O Info:
     34          Output     SB_LVCMOS    No       0        Simple Output  s2_phy          
     36          Output     SB_LVCMOS    No       0        Simple Output  s3_phy          
     38          Output     SB_LVCMOS    No       0        Simple Output  s4_phy          
-    42          Output     SB_LVCMOS    No       0        Simple Output  clock_output    
 
 Detailed Global Buffer Info:
 ----------------------------

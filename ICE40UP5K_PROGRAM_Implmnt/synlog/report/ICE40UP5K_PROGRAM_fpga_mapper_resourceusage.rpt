@@ -18,10 +18,10 @@ SB_MAC16            4 uses
   MULTONLY  4 uses
 SB_LUT4         1075 uses
 
-I/O ports: 21
-I/O primitives: 18
+I/O ports: 20
+I/O primitives: 17
 SB_GB_IO       3 uses
-SB_IO          15 uses
+SB_IO          14 uses
 
 I/O Register bits:                  0
 Register bits not including I/Os:   594 (11%)
