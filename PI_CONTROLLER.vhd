@@ -51,7 +51,7 @@ begin
                 prop_term <= kp * error_control;
 
                 -- Integral term calculation
-                integrator <= integrator + (ki * error_control);
+                integrator <= integrator + (ki * error_control)/16;
 
                 -- Calculate unclamped output
                 output_unclamped <= prop_term + integrator;

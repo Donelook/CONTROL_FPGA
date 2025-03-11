@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Mar 2 2025 23:50:57
+* File Generated:     Mar 11 2025 23:51:10
 
 * Purpose:            General info of design implementation
 
@@ -27,8 +27,8 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  594
-    LUTs:                 1269
+    FFs:                  595
+    LUTs:                 1375
     RAMs:                 0
     IOBs:                 17
     GBs:                  6
@@ -40,18 +40,18 @@ Design statistics:
     LFOSCs:               0
     RGBA_DRVs:            1
     LEDDA_IPs:            0
-    DSPs:                 4
+    DSPs:                 2
     SPRAMs:               0
     FILTER_50NSs:         0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1384/5280
-        Combinational Logic Cells: 790      out of   5280      14.9621%
-        Sequential Logic Cells:    594      out of   5280      11.25%
-        Logic Tiles:               294      out of   660       44.5455%
+    Total Logic Cells: 1489/5280
+        Combinational Logic Cells: 894      out of   5280      16.9318%
+        Sequential Logic Cells:    595      out of   5280      11.2689%
+        Logic Tiles:               274      out of   660       41.5152%
     Registers: 
-        Logic Registers:           594      out of   5280      11.25%
+        Logic Registers:           595      out of   5280      11.2689%
         IO Registers:              0        out of   480       0
     Block RAMs:                    0        out of   30        0%
     Warm Boots:                    0        out of   1         0%
@@ -61,7 +61,7 @@ Logic Resource Utilization:
     LFOSCs:                        0        out of   1         0%
     RGBA_DRVs:                     1        out of   1         100%
     LEDDA_IPs:                     0        out of   1         0%
-    DSPs:                          4        out of   8         50%
+    DSPs:                          2        out of   8         25%
     SPRAMs:                        0        out of   4         0%
     FILTER_50NSs:                  0        out of   2         0%
     Pins:
@@ -109,10 +109,10 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                   
     -------------  -------  ---------  ------  -----------                                   
-    0              2        IO         594     red_c_g                                       
+    0              2        IO         595     red_c_g                                       
     2              0                   2       delay_tr_input_c_g                            
     6              2                   2       delay_hc_input_c_g                            
-    1              0                   33      current_shift_inst.timer_s1.N_162_i_g         
+    1              0                   33      current_shift_inst.timer_s1.N_167_i_g         
     5              2                   31      phase_controller_inst2.stoper_tr.un1_start_g  
     3              0                   31      phase_controller_inst2.stoper_hc.un1_start_g  
 
@@ -120,13 +120,13 @@ Detailed Global Buffer Info:
 Router Summary:
 ---------------
     Status:  Successful
-    Runtime: 10 seconds
+    Runtime: 9 seconds
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     9720 out of 110555      8.792%
-                          Span 4     1821 out of  23008      7.91464%
-                         Span 12      346 out of   4464      7.7509%
+              Local line of tile    10056 out of 110555      9.09593%
+                          Span 4     1952 out of  23008      8.48401%
+                         Span 12      292 out of   4464      6.54122%
                   Global network        8 out of      8      100%
-      Vertical Inter-LUT Connect       54 out of   4620      1.16883%
+      Vertical Inter-LUT Connect       67 out of   4620      1.45022%
 

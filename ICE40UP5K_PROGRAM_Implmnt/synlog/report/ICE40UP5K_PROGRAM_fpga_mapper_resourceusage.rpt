@@ -4,19 +4,19 @@ Resource Usage Report for MAIN
 Mapping to part: ice40up5ksg48
 Cell usage:
 GND             14 uses
-SB_CARRY        690 uses
+SB_CARRY        708 uses
 SB_DFF          4 uses
 SB_DFFER        309 uses
-SB_DFFR         280 uses
+SB_DFFR         281 uses
 SB_DFFS         1 use
 SB_GB           3 uses
 SB_HFOSC        1 use
 SB_PLL40_CORE   1 use
 SB_RGBA_DRV     1 use
 VCC             14 uses
-SB_MAC16            4 uses
-  MULTONLY  4 uses
-SB_LUT4         1075 uses
+SB_MAC16            2 uses
+  MULTONLY  2 uses
+SB_LUT4         1166 uses
 
 I/O ports: 20
 I/O primitives: 17
@@ -24,11 +24,11 @@ SB_GB_IO       3 uses
 SB_IO          14 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   594 (11%)
+Register bits not including I/Os:   595 (11%)
 
 @S |Mapping Summary:
-Total  LUTs: 1075 (20%)
+Total  LUTs: 1166 (22%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 1075 = 1075 
+Distribution of All Consumed Luts 1166 = 1166 
 

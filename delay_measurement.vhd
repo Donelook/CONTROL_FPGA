@@ -23,9 +23,6 @@ architecture Behavioral of delay_measurement is
     signal elapsed_time_tr   : integer := 0;
     signal elapsed_time_hc   : integer := 0;
     
-    -- Signal to capture previous state of delay_tr_signal and delay_hc_signal
-    signal prev_delay_tr     : std_logic := '0';
-    signal prev_delay_hc     : std_logic := '0';
 
     -- Timer component declaration
     component timer is
@@ -67,7 +64,6 @@ begin
             -- Reset signals related to delay_tr period measurement
             start_timer_tr <= '0';
             stop_timer_tr <= '0';
-            prev_delay_tr <= '0';
         elsif rising_edge(delay_tr_signal) then
             -- Detect rising edge of delay_tr_signal
             
@@ -95,10 +91,8 @@ begin
             -- Reset signals related to delay_hc period measurement
             start_timer_hc <= '0';
             stop_timer_hc <= '0';
-            prev_delay_hc <= '0';
         elsif rising_edge(delay_hc_signal) then
             -- Detect rising edge of delay_hc_signal
-             
                 if start_timer_hc = '0' then
                     -- Start the timer on the first rising edge
                     start_timer_hc <= '1';
