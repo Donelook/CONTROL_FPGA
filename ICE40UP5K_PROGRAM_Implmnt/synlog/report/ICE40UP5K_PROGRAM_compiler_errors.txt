@@ -1,4 +1,4 @@
-@E: CD200 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":67:12:67:24|Misspelled variable, signal or procedure name?
+@E: CD255 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":239:24:239:24|No identifier "clk" in scope
 @E: Parse errors encountered - exiting
 @E::VHDL compiler failed
 

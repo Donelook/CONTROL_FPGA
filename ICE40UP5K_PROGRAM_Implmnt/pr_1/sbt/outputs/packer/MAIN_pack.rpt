@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Mar 11 2025 23:51:10
+* File Generated:     Mar 14 2025 21:00:48
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 0 seconds
+    Runtime: 1 seconds
 
 Device Info:
 ------------
@@ -27,8 +27,8 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  595
-    LUTs:                 1375
+    FFs:                  551
+    LUTs:                 1378
     RAMs:                 0
     IOBs:                 17
     GBs:                  6
@@ -46,12 +46,12 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1489/5280
-        Combinational Logic Cells: 894      out of   5280      16.9318%
-        Sequential Logic Cells:    595      out of   5280      11.2689%
-        Logic Tiles:               274      out of   660       41.5152%
+    Total Logic Cells: 1492/5280
+        Combinational Logic Cells: 941      out of   5280      17.822%
+        Sequential Logic Cells:    551      out of   5280      10.4356%
+        Logic Tiles:               266      out of   660       40.303%
     Registers: 
-        Logic Registers:           595      out of   5280      11.2689%
+        Logic Registers:           551      out of   5280      10.4356%
         IO Registers:              0        out of   480       0
     Block RAMs:                    0        out of   30        0%
     Warm Boots:                    0        out of   1         0%
@@ -107,11 +107,11 @@ Detailed I/O Info:
 
 Detailed Global Buffer Info:
 ----------------------------
-    Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                   
-    -------------  -------  ---------  ------  -----------                                   
-    0              2        IO         595     red_c_g                                       
-    2              0                   2       delay_tr_input_c_g                            
-    6              2                   2       delay_hc_input_c_g                            
-    1              0                   33      current_shift_inst.timer_s1.N_167_i_g         
-    5              2                   31      phase_controller_inst2.stoper_tr.un1_start_g  
-    3              0                   31      phase_controller_inst2.stoper_hc.un1_start_g  
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                      
+    -------------  -------  ---------  ------  -----------                                      
+    0              2        IO         552     red_c_g                                          
+    2              0                   2       delay_tr_input_c_g                               
+    6              2                   2       delay_hc_input_c_g                               
+    3              0                   31      delay_measurement_inst.delay_hc_timer.N_397_i_g  
+    1              0                   33      current_shift_inst.timer_s1.N_166_i_g            
+    5              2                   31      delay_measurement_inst.delay_tr_timer.N_399_i_g  

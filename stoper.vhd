@@ -39,7 +39,13 @@ begin
                 running <= '1';
                 accumulated_time <= 0;
                 time_passed <= '0';
+		if duration_ns > 1000000 then 
+			target_time <= 1000000;
+		elsif duration_ns < 10 then
+			target_time <= 10;
+		else
                 target_time <= duration_ns;  -- Set target time directly
+		end if;
             elsif start = '0' then
                 -- Reset the latch when the start signal is low
                 start_latched <= '0';

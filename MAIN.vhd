@@ -184,19 +184,24 @@ architecture Behavioral of MAIN is
 	signal green : std_logic; 
 	signal blue : std_logic; 
 
-	 signal 	il_max_comp1_D1  :  std_logic;   -- Current limit comparator 1 (max)
-     signal    il_max_comp1_D2   :  std_logic;   -- Current limit comparator 1 (max)
-     signal    il_min_comp1_D1   :  std_logic;
-     signal    il_min_comp1_D2   :  std_logic;
+	 signal 	il_max_comp1_D1  :  std_logic := '0';   -- Current limit comparator 1 (max)
+     signal    il_max_comp1_D2   :  std_logic := '0';   -- Current limit comparator 1 (max)
+     signal    il_min_comp1_D1   :  std_logic := '0';
+     signal    il_min_comp1_D2   :  std_logic := '0';
      
-     signal 	il_max_comp2_D1  :  std_logic;   -- Current limit comparator 1 (max)
-     signal    il_max_comp2_D2   :  std_logic;   -- Current limit comparator 1 (max)
-     signal    il_min_comp2_D1   :  std_logic;
-     signal    il_min_comp2_D2   :  std_logic;
-
+     signal 	il_max_comp2_D1  :  std_logic := '0';   -- Current limit comparator 1 (max)
+     signal    il_max_comp2_D2   :  std_logic := '0';   -- Current limit comparator 1 (max)
+     signal    il_min_comp2_D1   :  std_logic := '0';
+     signal    il_min_comp2_D2   :  std_logic := '0';
+     
+     --signal    delay_hc_D1   :  std_logic := '0';
+    -- signal    delay_hc_D2   :  std_logic := '0'; 
+    -- signal    delay_tr_D1   :  std_logic := '0';
+     --signal    delay_tr_D2   :  std_logic := '0';
 begin
-		osc_enable   <= '1';  -- Enable oscillator
+	osc_enable   <= '1';  -- Enable oscillator
      	osc_powerup  <= '1';  -- Power up oscillator
+
 	-- Instantiate the internal high-frequency oscillator (HFOSC)
    	osc:SB_HFOSC
 		generic map
@@ -209,7 +214,9 @@ begin
   			CLKHFPU   =>'1',
   			CLKHF => clk_12mhz
 		);
+
 		--reset<= error_pin;
+
    -- PLL Instance for clock generation (12 MHz to 100.5 MHz)
     pll_inst: ICE40_MAIN_PROGRAM_100MHZ_pll
         Port map (
@@ -219,7 +226,25 @@ begin
             RESET        => not reset        	-- Reset input for PLL
         );
    	--	clock_output <= clk_100mhz;
+		
+	--	process(clk_100mhz)
+	--	begin
+    --		if rising_edge(clk_100mhz) then
+       --		 	delay_hc_D1 <= delay_hc_input;  -- First DFF
+       -- 		delay_hc_D2 <= delay_hc_D1;        -- Second DFF (reduces metastability)
+    --		end if;
+	--	end process;
 
+
+	--	process(clk_100mhz)
+	--	begin
+    	--	if rising_edge(clk_100mhz) then
+       	--	 	delay_tr_D1 <= delay_tr_input;  -- First DFF
+        --		delay_tr_D2 <= delay_tr_D1;        -- Second DFF (reduces metastability)
+    	--	end if;
+		--end process;
+		
+		
     -- Instantiate delay_measurement module for measuring delay_tr and delay_hc
     delay_measurement_inst: delay_measurement
         Port map (
@@ -305,8 +330,8 @@ begin
             clk             => clk_100mhz,
             reset           => reset,
             start           => start_stop,         -- Same start/stop control
-            IL_max_comp     => il_max_comp2,       -- Connect comparator signal 2 (max current)
-            IL_min_comp     => il_min_comp2,       -- Connect comparator signal 2 (min current)
+            IL_max_comp     => il_max_comp2_D2,       -- Connect comparator signal 2 (max current)
+            IL_min_comp     => il_min_comp2_D2,       -- Connect comparator signal 2 (min current)
             delay_hc        => measured_delay_hc,  -- Same measured delay for HC
             delay_tr        => measured_delay_tr,  -- Same measured delay for TR
             S1              => s3_phy,                 -- Output to transistor S3

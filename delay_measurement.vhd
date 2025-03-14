@@ -64,6 +64,7 @@ begin
             -- Reset signals related to delay_tr period measurement
             start_timer_tr <= '0';
             stop_timer_tr <= '0';
+		delay_tr <= 10;
         elsif rising_edge(delay_tr_signal) then
             -- Detect rising edge of delay_tr_signal
             
@@ -79,8 +80,11 @@ begin
                 end if;
                 
         end if;
-        if elapsed_time_tr > 0  then 
+        if elapsed_time_tr > 10 AND elapsed_time_tr < 1000000  then 
             delay_tr <= elapsed_time_tr; -- Assign the final measured period for delay_tr to the output
+        end if; 
+        if  elapsed_time_tr > 1000000  then 
+            delay_tr <= 1000000 ; -- Assign the final measured period for delay_tr to the output
         end if; 
     end process;
 
@@ -91,6 +95,7 @@ begin
             -- Reset signals related to delay_hc period measurement
             start_timer_hc <= '0';
             stop_timer_hc <= '0';
+	delay_hc <= 10;
         elsif rising_edge(delay_hc_signal) then
             -- Detect rising edge of delay_hc_signal
                 if start_timer_hc = '0' then
@@ -104,9 +109,12 @@ begin
                    -- delay_hc <= elapsed_time_hc;
                 end if;
         end if;
-        if elapsed_time_hc > 0  then 
+        if elapsed_time_hc > 10  AND elapsed_time_tr < 1000000  then 
             delay_hc <= elapsed_time_hc; -- Assign the final measured period for delay_hc to the output
         end if;
+        if  elapsed_time_tr > 1000000  then 
+            delay_hc <= 1000000 ; -- Assign the final measured period for delay_tr to the output
+        end if; 
     end process;
 
     -- Output the measured delays
