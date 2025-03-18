@@ -7,8 +7,8 @@ GND             14 uses
 SB_CARRY        708 uses
 SB_DFF          8 uses
 SB_DFFER        261 uses
-SB_DFFR         281 uses
-SB_DFFS         1 use
+SB_DFFR         293 uses
+SB_DFFS         9 uses
 SB_GB           3 uses
 SB_HFOSC        1 use
 SB_PLL40_CORE   1 use
@@ -24,7 +24,7 @@ SB_GB_IO       3 uses
 SB_IO          14 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   551 (10%)
+Register bits not including I/Os:   571 (10%)
 
 @S |Mapping Summary:
 Total  LUTs: 1251 (23%)

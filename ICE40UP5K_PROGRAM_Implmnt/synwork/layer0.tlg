@@ -2,6 +2,8 @@
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":25:7:25:10|Synthesizing work.main.behavioral.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PWM_GENERATOR.vhd":5:7:5:19|Synthesizing work.pwm_generator.behavioral.
 Post processing for work.pwm_generator.behavioral
+@W: CL265 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PWM_GENERATOR.vhd":30:8:30:9|Removing unused bit 0 of change_flag_5(1 downto 0). Either assign all bits or reduce the width of the signal.
+@W: CL111 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PWM_GENERATOR.vhd":30:8:30:9|All reachable assignments to change_flag(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":7:7:7:19|Synthesizing work.current_shift.behavioral.
 @W: CD434 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":154:12:154:14|Signal clk in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PI_CONTROLLER.vhd":6:7:6:19|Synthesizing work.pi_controller.behavioral.

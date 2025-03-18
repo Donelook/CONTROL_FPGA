@@ -114,9 +114,9 @@ begin
                     S2 <= '0';
 				--start_timer_hc <= '0';  -- Stop the stoper for delay_hc after it starts
                     if hc_time_passed = '1' then
-						start_timer_hc <= '0';  -- Stop the stoper for delay_hc after it starts
+			start_timer_hc <= '0';  -- Stop the stoper for delay_hc after it starts
                         state <= T23A_STATE;
-                        start_timer_tr <= '1';  -- Start the stoper for delay_tr
+                       
                     end if;
 
                 when T23A_STATE =>
@@ -135,7 +135,7 @@ begin
                     S1 <= '0';
                     S2 <= '0';
                     if tr_time_passed = '1' then
-						start_timer_tr <= '0';  -- Stop the stoper for delay_tr
+			start_timer_tr <= '0';  -- Stop the stoper for delay_tr
 
                         state <= T01A_STATE;
                     end if;
