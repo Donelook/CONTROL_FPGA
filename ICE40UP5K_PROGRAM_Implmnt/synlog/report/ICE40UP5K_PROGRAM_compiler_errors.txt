@@ -1,4 +1,4 @@
-@E: CD255 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":239:24:239:24|No identifier "clk" in scope
+@E: CG103 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":42:19:42:19|Expecting expression
 @E: Parse errors encountered - exiting
 @E::VHDL compiler failed
 

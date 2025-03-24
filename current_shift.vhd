@@ -128,7 +128,7 @@ begin
 
 
 
-    process(S3, S1, reset)
+    process(S3, S1, reset, phase_bufor)
     begin
         if reset = '1' then
             -- Reset all signals
@@ -153,10 +153,10 @@ begin
     -- Calculate the phase shift ratio and feed it into the PI controller
     process(clk, elapsed_time_ns_s1, elapsed_time_ns_phase)
     begin
-
+		if  rising_edge(clk)  then
         -- Normalize and adjust the phase shift input for PI controller
         control_input <=  (elapsed_time_ns_s1/2 - elapsed_time_ns_phase)/1048576; -- Adjusting the phase shift change from 8 to 1048576
-
+		end if;
        
     end process;
    

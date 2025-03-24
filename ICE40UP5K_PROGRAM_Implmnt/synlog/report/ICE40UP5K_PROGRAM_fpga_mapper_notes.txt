@@ -9,8 +9,8 @@
 @N: FX1016 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\main.vhd":40:8:40:21|SB_GB_IO inserted on the port delay_hc_input.
 @N: FX1016 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\main.vhd":29:8:29:12|SB_GB_IO inserted on the port reset.
 @N: FX1017 :|SB_GB inserted on the net N_166_i.
-@N: FX1017 :|SB_GB inserted on the net N_393_i.
-@N: FX1017 :|SB_GB inserted on the net N_395_i.
+@N: FX1017 :|SB_GB inserted on the net N_432_i.
+@N: FX1017 :|SB_GB inserted on the net N_434_i.
 @N: MT611 :|Automatically generated clock ICE40_MAIN_PROGRAM_100MHZ_pll|PLLOUTCORE_derived_clock is not used and is being removed
 @N: MT611 :|Automatically generated clock phase_controller_1|S1_derived_clock is not used and is being removed
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.

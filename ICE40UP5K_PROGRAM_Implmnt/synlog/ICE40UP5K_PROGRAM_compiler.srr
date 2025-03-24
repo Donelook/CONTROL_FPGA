@@ -10,13 +10,13 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @N:"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":25:7:25:10|Top entity is set to MAIN.
 VHDL syntax check successful!
 @N: CD231 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PWM_GENERATOR.vhd changed - recompiling
+File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd changed - recompiling
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 75MB)
 
 
 Process completed successfully.
-# Tue Mar 18 23:47:09 2025
+# Mon Mar 24 22:18:07 2025
 
 ###########################################################]
 Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -35,7 +35,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Tue Mar 18 23:47:09 2025
+# Mon Mar 24 22:18:07 2025
 
 ###########################################################]
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ps
@@ -50,7 +50,7 @@ File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PR
 File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd changed - recompiling
 File C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40_components_syn.vhd changed - recompiling
 VHDL syntax check successful!
-File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PWM_GENERATOR.vhd changed - recompiling
+File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd changed - recompiling
 @N: CD231 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":25:7:25:10|Synthesizing work.main.behavioral.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PWM_GENERATOR.vhd":5:7:5:19|Synthesizing work.pwm_generator.behavioral.
@@ -58,7 +58,6 @@ Post processing for work.pwm_generator.behavioral
 @W: CL265 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PWM_GENERATOR.vhd":30:8:30:9|Removing unused bit 0 of change_flag_5(1 downto 0). Either assign all bits or reduce the width of the signal.
 @W: CL111 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PWM_GENERATOR.vhd":30:8:30:9|All reachable assignments to change_flag(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":7:7:7:19|Synthesizing work.current_shift.behavioral.
-@W: CD434 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":154:12:154:14|Signal clk in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PI_CONTROLLER.vhd":6:7:6:19|Synthesizing work.pi_controller.behavioral.
 Post processing for work.pi_controller.behavioral
 @W: CL169 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PI_CONTROLLER.vhd":35:8:35:9|Pruning unused register anti_windup_1(31 downto 0). Make sure that there are no unused intermediate registers.
@@ -79,33 +78,15 @@ Post processing for work.current_shift.behavioral
 @N: CD231 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd":25:23:25:24|Using onehot encoding for type state_machine. For example, enumeration readytogo_state is mapped to "100000".
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":5:7:5:12|Synthesizing work.stoper.behavioral.
 Post processing for work.stoper.behavioral
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(20) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(21) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(22) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(23) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(24) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(25) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(26) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(27) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(28) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(29) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(30) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit target_time(31) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Pruning register bits 31 to 20 of target_time(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 Post processing for work.phase_controller.behavioral
 @W: CL169 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd":69:8:69:9|Pruning unused register start_flag_2. Make sure that there are no unused intermediate registers.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":5:7:5:23|Synthesizing work.delay_measurement.behavioral.
-@W: CG296 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":61:4:61:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":83:37:83:51|Referenced variable elapsed_time_tr is not in sensitivity list.
-@W: CG296 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":92:4:92:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":112:11:112:25|Referenced variable elapsed_time_hc is not in sensitivity list.
-@W: CG290 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":112:38:112:52|Referenced variable elapsed_time_tr is not in sensitivity list.
 Post processing for work.delay_measurement.behavioral
-@W: CL117 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":115:8:115:9|Latch generated from process for signal delay_hc(31 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":86:8:86:9|Latch generated from process for signal delay_tr(31 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":112:8:112:9|Latch generated from process for signal delay_hc(31 downto 0); possible missing assignment in an if or case statement.
 Post processing for work.main.behavioral
 @W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Optimizing register bit accumulated_time(0) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL260 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Pruning register bit 0 of accumulated_time(31 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\stoper.vhd":28:8:28:9|Pruning register bit 0 of accumulated_time(19 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CL201 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd":69:8:69:9|Trying to extract state machine for register state.
 Extracted state machine for register state
 State machine has 5 reachable states with original encodings of:
@@ -117,14 +98,15 @@ State machine has 5 reachable states with original encodings of:
 @W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\timer.vhd":30:8:30:9|Optimizing register bit elapsed_time_ns(0) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\timer.vhd":30:8:30:9|Pruning register bit 0 of elapsed_time_ns(31 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":133:8:133:9|Optimizing register bit stop_timer_phase to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":156:2:156:3|Pruning register bits 31 to 12 of control_input(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL169 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":133:8:133:9|Pruning unused register stop_timer_phase. Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":133:8:133:9|Pruning unused register phase_bufor. Make sure that there are no unused intermediate registers.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 80MB peak: 83MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 80MB peak: 84MB)
 
 
 Process completed successfully.
-# Tue Mar 18 23:47:09 2025
+# Mon Mar 24 22:18:08 2025
 
 ###########################################################]
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
@@ -148,7 +130,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Tue Mar 18 23:47:09 2025
+# Mon Mar 24 22:18:08 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -162,12 +144,12 @@ For a summary of linker messages for components that did not bind, please see lo
 =======================================================================================
 
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 23:47:09 2025
+# Mon Mar 24 22:18:08 2025
 
 ###########################################################]
 @END
@@ -177,6 +159,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 23:47:10 2025
+# Mon Mar 24 22:18:08 2025
 
 ###########################################################]

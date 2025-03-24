@@ -58,7 +58,7 @@ begin
         );
 
     -- Control logic for delay_tr_signal measurement
-    process(delay_tr_signal, reset)
+    process(delay_tr_signal, reset, elapsed_time_tr)
     begin
         if reset = '1' then
             -- Reset signals related to delay_tr period measurement
@@ -89,7 +89,7 @@ begin
     end process;
 
     -- Control logic for delay_hc_signal measurement
-    process(delay_hc_signal, reset)
+    process(delay_hc_signal, reset, elapsed_time_hc)
     begin
         if reset = '1' then
             -- Reset signals related to delay_hc period measurement
@@ -109,10 +109,9 @@ begin
                    -- delay_hc <= elapsed_time_hc;
                 end if;
         end if;
-        if elapsed_time_hc > 10  AND elapsed_time_tr < 1000000  then 
+        if elapsed_time_hc > 10  AND elapsed_time_hc < 1000000  then 
             delay_hc <= elapsed_time_hc; -- Assign the final measured period for delay_hc to the output
-        end if;
-        if  elapsed_time_tr > 1000000  then 
+        elsif  elapsed_time_hc > 1000000  then 
             delay_hc <= 1000000 ; -- Assign the final measured period for delay_tr to the output
         end if; 
     end process;

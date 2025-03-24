@@ -16,14 +16,14 @@ architecture Behavioral of stoper is
     constant CLK_FREQ      : integer := 100_000_000;  -- Clock frequency in Hz (example: 100 MHz)
     constant TICK_TIME_NS  : integer := 10;          -- Clock period in nanoseconds (for 100 MHz, 1 tick = 10 ns)
 
-    signal accumulated_time : integer := 0;          -- Accumulated time in nanoseconds
-    signal target_time      : integer := 0;          -- Target time in nanoseconds
+    signal accumulated_time : integer range 0 to 1_000_000 := 0;          -- Accumulated time in nanoseconds
+    signal target_time      : integer range 0 to 1_000_000 := 0;          -- Target time in nanoseconds
     signal running          : std_logic := '0';      -- Flag to indicate the stoper is running
     signal start_latched    : std_logic := '0';      -- Latch for detecting start signal edge
 begin
 
     -- Process to handle the stoper functionality
-    process(clk, reset)
+    process(clk, reset, start,  time_passed)
     begin
         if reset = '1' then
             -- Reset all signals
@@ -49,6 +49,7 @@ begin
             elsif start = '0' then
                 -- Reset the latch when the start signal is low
                 start_latched <= '0';
+               -- time_passed <= '0';
             elsif running = '1' then
                 if accumulated_time >= target_time then
                     -- Stop when accumulated time exceeds or matches the target time
@@ -63,4 +64,3 @@ begin
     end process;
 
 end Behavioral;
-
