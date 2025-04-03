@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Mar 24 2025 22:19:42
+* File Generated:     Apr 4 2025 00:08:49
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 1 seconds
+    Runtime: 0 seconds
 
 Device Info:
 ------------
@@ -28,7 +28,7 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  531
-    LUTs:                 1325
+    LUTs:                 1333
     RAMs:                 0
     IOBs:                 17
     GBs:                  6
@@ -46,10 +46,10 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1411/5280
-        Combinational Logic Cells: 880      out of   5280      16.6667%
+    Total Logic Cells: 1419/5280
+        Combinational Logic Cells: 888      out of   5280      16.8182%
         Sequential Logic Cells:    531      out of   5280      10.0568%
-        Logic Tiles:               263      out of   660       39.8485%
+        Logic Tiles:               246      out of   660       37.2727%
     Registers: 
         Logic Registers:           531      out of   5280      10.0568%
         IO Registers:              0        out of   480       0
@@ -124,9 +124,9 @@ Router Summary:
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     9647 out of 110555      8.72597%
-                          Span 4     1744 out of  23008      7.57997%
-                         Span 12      214 out of   4464      4.79391%
+              Local line of tile     9731 out of 110555      8.80195%
+                          Span 4     1860 out of  23008      8.08414%
+                         Span 12      261 out of   4464      5.84677%
                   Global network        8 out of      8      100%
-      Vertical Inter-LUT Connect      103 out of   4620      2.22944%
+      Vertical Inter-LUT Connect      106 out of   4620      2.29437%
 

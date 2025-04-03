@@ -23,7 +23,8 @@ architecture Behavioral of delay_measurement is
     signal elapsed_time_tr   : integer := 0;
     signal elapsed_time_hc   : integer := 0;
     
-
+   -- signal flag_timer_finished_tr     : std_logic := '0';
+    --signal flag_timer_finished_hc     : std_logic := '0';
     -- Timer component declaration
     component timer is
         Port (
@@ -95,7 +96,7 @@ begin
             -- Reset signals related to delay_hc period measurement
             start_timer_hc <= '0';
             stop_timer_hc <= '0';
-	delay_hc <= 10;
+			delay_hc <= 10;
         elsif rising_edge(delay_hc_signal) then
             -- Detect rising edge of delay_hc_signal
                 if start_timer_hc = '0' then
