@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Apr 5 2025 21:16:06
+* File Generated:     Apr 13 2025 20:49:51
 
 * Purpose:            Detailed IO and package pin info
 
@@ -43,14 +43,14 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 22, VDDIO_SPI, not used, , , , , , bottomBank, 
 23, PIO_I3C, not used, , , , , , topBank, 
 24, VPP, not used, , , , , , topBank, 
-25, PIO_I3C, T01, Output, , SB_LVCMOS, No Pull Up, , , Simple Output, topBank, x1
-26, PIO, T12, Output, , SB_LVCMOS, No Pull Up, , , Simple Output, topBank, x1
-27, PIO, T23, Output, , SB_LVCMOS, No Pull Up, , , Simple Output, topBank, x1
+25, PIO_I3C, not used, , , , , , topBank, 
+26, PIO, not used, , , , , , topBank, 
+27, PIO, not used, , , , , , topBank, 
 28, PIO, not used, , , , , , topBank, 
 29, AVDD_TOP, not used, , , , , , UnknownBank, 
 30, VCC, not used, , , , , , UnknownBank, 
 31, PIO, s1_phy, Output, , SB_LVCMOS, No Pull Up, , , Simple Output, topBank, x1
-32, PIO, T45, Output, , SB_LVCMOS, No Pull Up, , , Simple Output, topBank, x1
+32, PIO, not used, , , , , , topBank, 
 33, VCCIO_0, not used, , , , , , topBank, 
 34, PIO, s2_phy, Output, , SB_LVCMOS, No Pull Up, , , Simple Output, topBank, x1
 35, PIO_GBIN, not used, , , , , , topBank, 
@@ -67,4 +67,4 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 46, PIO, il_max_comp2, Input, , SB_LVCMOS, No Pull Up, , , Simple Input, bottomBank, x1
 47, PIO, not used, , , , , , bottomBank, 
 48, PIO, il_min_comp2, Input, , SB_LVCMOS, No Pull Up, , , Simple Input, bottomBank, x1
-Total Number of Used Pins, 20
+Total Number of Used Pins, 16

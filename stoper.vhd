@@ -34,18 +34,18 @@ architecture Behavioral of stoper is
 begin
 
     -- Synchronous process (one clock, one process) to avoid latches
-    process(clk)
+    process(clk,reset)
     begin
-        if rising_edge(clk) then
-            if reset = '1' then
+        if reset = '1' then
+            
                 -- Asynchronous or synchronous reset (active high)
                 -- Move to IDLE and clear all relevant signals
-                stoper_state     <= IDLE;
+                --stoper_state     <= IDLE;
                 accumulated_time <= 0;
                 target_time      <= 0;
                 time_passed      <= '0';
 
-            else  -- normal operation
+            elsif rising_edge(clk) then -- normal operation
                 case stoper_state is
 
                     when IDLE =>
@@ -97,7 +97,6 @@ begin
                         -- Fallback (shouldn't happen)
                         stoper_state <= IDLE;
                 end case;
-            end if;
         end if;
     end process;
 

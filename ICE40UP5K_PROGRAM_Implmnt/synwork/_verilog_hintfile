@@ -12,12 +12,12 @@
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\unsigned.vhd":1717163153
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\PI_CONTROLLER.vhd":1741733405
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\PWM_GENERATOR.vhd":1742338027
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\stoper.vhd":1743880455
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\stoper.vhd":1744315194
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\timer.vhd":1741980661
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\current_shift.vhd":1742851085
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\delay_measurement.vhd":1743709338
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\current_shift.vhd":1744566527
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\delay_measurement.vhd":1744566531
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\phase_controller.vhd":1743708774
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\MAIN.vhd":1742761474
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\MAIN.vhd":1744570133
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40_components_syn.vhd":1717163152
 @E8lFkRDCvhqQ
 LDHs$NsRsIF	M
@@ -36,11 +36,7 @@ HbRk08NCD$O_E_bHMk40R
 0FkbRk0b_IlFbk0k40R
 0FkbRk0s_oLs
 R4Fbk0ks0RooL_RF4
-kk0b0oRsLR_L4k
-F00bkR4ajRF4
-kk0b04Ra.
-R4Fbk0ka0R.4dR
-0FkbRk0aRc64M
+kk0b0oRsLR_L4M
 C88lFk
 DClkF8DbCRECN#_MOF0DsFD
 CsDsHLNRs$I	Fs

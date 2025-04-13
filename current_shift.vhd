@@ -98,7 +98,7 @@ begin
             enable       => '1',
             setpoint     => 0,  -- Setpoint is zero (0.5 - phase_shift_ratio should be zero ideally)
             measured     => control_input,
-            kp           => 1,  -- Proportional gain
+            kp           => 16,  -- Proportional gain
             ki           => 1,  -- Integral gain
             output_min   => -1000, -- Min limit for control output
             output_max   => 1000,  -- Max limit for control output

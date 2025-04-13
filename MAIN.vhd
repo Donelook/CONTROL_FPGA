@@ -50,12 +50,12 @@ entity MAIN is
         
         rgb_r              : out std_logic;
         rgb_g              : out std_logic;
-        rgb_b              : out std_logic;
+        rgb_b              : out std_logic
         
-        T01  			: out std_logic;   -- test signal
-        T12    			: out std_logic;   -- test signal
-        T23    			: out std_logic;   -- test signal
-        T45    			: out std_logic		-- test signal
+      --  T01  			: out std_logic;   -- test signal
+       -- T12    			: out std_logic;   -- test signal
+      --  T23    			: out std_logic;   -- test signal
+       -- T45    			: out std_logic		-- test signal
       --  clock_output		: out std_logic
     );
 end MAIN;
@@ -172,6 +172,11 @@ architecture Behavioral of MAIN is
     -- Signals for delay measurement
     signal measured_delay_tr  : integer := 0;
     signal measured_delay_hc  : integer := 0;
+        
+    signal delay_tr_d1 : std_logic := '0';
+    signal delay_tr_d2 : std_logic := '0';
+    signal delay_hc_d1 : std_logic := '0';
+    signal delay_hc_d2 : std_logic := '0';
 
     -- Signals for current shift and PWM duty cycle
     signal pwm_duty_input     : integer := 0;  -- Output of current_shift to control the PWM duty cycle
@@ -194,6 +199,8 @@ architecture Behavioral of MAIN is
      signal    il_min_comp2_D1   :  std_logic := '0';
      signal    il_min_comp2_D2   :  std_logic := '0';
      
+     --attribute syn_global_buffers : integer;
+     --architecture behave of syn_global_buffers is 10; 
      --signal    delay_hc_D1   :  std_logic := '0';
     -- signal    delay_hc_D2   :  std_logic := '0'; 
     -- signal    delay_tr_D1   :  std_logic := '0';
@@ -244,17 +251,43 @@ begin
     	--	end if;
 		--end process;
 		
+		SB_DFF_inst_DELAY_TR1: SB_DFF
+		port map (
+			Q => delay_tr_d1, -- Registered Output
+			C => clk_100mhz, -- Clock
+			D => delay_tr_input -- Data
+		);
+		SB_DFF_inst_DELAY_TR2: SB_DFF
+		port map (
+			Q => delay_tr_d2, -- Registered Output
+			C => clk_100mhz, -- Clock
+			D => delay_tr_d1 -- Data
+		);
+		
+	SB_DFF_inst_DELAY_HC1: SB_DFF
+		port map (
+			Q => delay_hc_d1, -- Registered Output
+			C => clk_100mhz, -- Clock
+			D => delay_hc_input-- Data
+		);
+		SB_DFF_inst_DELAY_HC2: SB_DFF
+		port map (
+			Q => delay_hc_d2, -- Registered Output
+			C => clk_100mhz, -- Clock
+			D => delay_hc_d1 -- Data
+		);
 		
     -- Instantiate delay_measurement module for measuring delay_tr and delay_hc
     delay_measurement_inst: delay_measurement
         Port map (
             clk             => clk_100mhz,
             reset           => reset,
-            delay_tr_signal => delay_tr_input,
-            delay_hc_signal => delay_hc_input,
+            delay_tr_signal => delay_tr_d2,
+            delay_hc_signal => delay_hc_d2,
             delay_tr        => measured_delay_tr,  -- Output measured TR delay
             delay_hc        => measured_delay_hc   -- Output measured HC delay
         );
+        
 	SB_DFF_inst_PH1_MAX_D1: SB_DFF
 		port map (
 			Q => il_max_comp1_D1, -- Registered Output
@@ -336,10 +369,10 @@ begin
             delay_tr        => measured_delay_tr,  -- Same measured delay for TR
             S1              => s3_phy,                 -- Output to transistor S3
             S2              => s4_phy,                -- Output to transistor S4
-        	T01  			=> T01,
-        	T12  			=> T12,    			
-        	T23  			=> T23,    			
-        	T45  			=> T45   
+        	T01  			=> open,
+        	T12  			=> open,    			
+        	T23  			=> open,    			
+        	T45  			=> open   
             -- Error output signal
             
         );
