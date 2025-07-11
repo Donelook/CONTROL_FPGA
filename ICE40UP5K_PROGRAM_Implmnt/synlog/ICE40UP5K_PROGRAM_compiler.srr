@@ -11,13 +11,12 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @W: CD134 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":64:28:64:42|No such identifier, delay_hc_signal, of proper type in current declarative region
 VHDL syntax check successful!
 @N: CD231 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd changed - recompiling
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 75MB)
 
 
 Process completed successfully.
-# Sun Apr 13 20:48:53 2025
+# Fri Jul 11 22:40:14 2025
 
 ###########################################################]
 Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -36,7 +35,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Sun Apr 13 20:48:54 2025
+# Fri Jul 11 22:40:14 2025
 
 ###########################################################]
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ps
@@ -117,15 +116,15 @@ State machine has 5 reachable states with original encodings of:
 @W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\timer.vhd":30:8:30:9|Optimizing register bit elapsed_time_ns(0) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\timer.vhd":30:8:30:9|Pruning register bit 0 of elapsed_time_ns(31 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL190 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":133:8:133:9|Optimizing register bit stop_timer_phase to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":156:2:156:3|Pruning register bits 31 to 12 of control_input(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":156:2:156:3|Pruning register bits 31 to 26 of control_input(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL169 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":133:8:133:9|Pruning unused register stop_timer_phase. Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\current_shift.vhd":133:8:133:9|Pruning unused register phase_bufor. Make sure that there are no unused intermediate registers.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 82MB peak: 89MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 75MB)
 
 
 Process completed successfully.
-# Sun Apr 13 20:48:54 2025
+# Fri Jul 11 22:40:14 2025
 
 ###########################################################]
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
@@ -135,6 +134,9 @@ Process completed successfully.
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
 @I::"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v" (library work)
 Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
 @N: CG364 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v":698:7:698:19|Synthesizing module SB_PLL40_CORE in library work.
 
 @N: CG364 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40_MAIN_PROGRAM_100MHZ_pll.v":1:7:1:35|Synthesizing module ICE40_MAIN_PROGRAM_100MHZ_pll in library work.
@@ -149,13 +151,11 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Sun Apr 13 20:48:54 2025
+# Fri Jul 11 22:40:14 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
-File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\synwork\layer0.srs changed - recompiling
-File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\synwork\layer1.srs changed - recompiling
 
 =======================================================================================
 For a summary of linker messages for components that did not bind, please see log file:
@@ -168,7 +168,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Apr 13 20:48:54 2025
+# Fri Jul 11 22:40:14 2025
 
 ###########################################################]
 @END
@@ -178,6 +178,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Apr 13 20:48:54 2025
+# Fri Jul 11 22:40:14 2025
 
 ###########################################################]

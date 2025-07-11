@@ -5,18 +5,18 @@
 
 
 #project files
-add_file -vhdl -lib work "MAIN.vhd"
-add_file -vhdl -lib work "PI_CONTROLLER.vhd"
-add_file -vhdl -lib work "PWM_GENERATOR.vhd"
-add_file -vhdl -lib work "current_shift.vhd"
-add_file -vhdl -lib work "delay_measurement.vhd"
-add_file -vhdl -lib work "phase_controller.vhd"
-add_file -vhdl -lib work "stoper.vhd"
-add_file -vhdl -lib work "timer.vhd"
-add_file -verilog "ICE40_MAIN_PROGRAM_100MHZ_pll.v"
 
 
 
+add_file -vhdl -lib work "MAIN.vhd" 
+add_file -vhdl -lib work "PI_CONTROLLER.vhd" 
+add_file -vhdl -lib work "PWM_GENERATOR.vhd" 
+add_file -vhdl -lib work "current_shift.vhd" 
+add_file -vhdl -lib work "delay_measurement.vhd" 
+add_file -vhdl -lib work "phase_controller.vhd" 
+add_file -vhdl -lib work "stoper.vhd" 
+add_file -vhdl -lib work "timer.vhd" 
+add_file -verilog -lib work "ICE40_MAIN_PROGRAM_100MHZ_pll.v" 
 #implementation: "ICE40UP5K_PROGRAM_Implmnt"
 impl -add ICE40UP5K_PROGRAM_Implmnt -type fpga
 
@@ -30,7 +30,7 @@ set_option -project_relative_includes 1
 set_option -technology SBTiCE40UP
 set_option -part iCE40UP5K
 set_option -package SG48
-set_option -speed_grade ""
+set_option -speed_grade 
 set_option -part_companion ""
 
 #compilation/mapping options
@@ -78,4 +78,5 @@ set_option -write_apr_constraint 1
 
 #set result format/file last
 project -result_file "ICE40UP5K_PROGRAM_Implmnt/ICE40UP5K_PROGRAM.edf"
-impl -active "ICE40UP5K_PROGRAM_Implmnt"
+impl -active ICE40UP5K_PROGRAM_Implmnt
+project -run synthesis -clean

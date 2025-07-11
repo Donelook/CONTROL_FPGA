@@ -98,7 +98,7 @@ begin
             enable       => '1',
             setpoint     => 0,  -- Setpoint is zero (0.5 - phase_shift_ratio should be zero ideally)
             measured     => control_input,
-            kp           => 16,  -- Proportional gain
+            kp           => 1,  -- Proportional gain
             ki           => 1,  -- Integral gain
             output_min   => -1000, -- Min limit for control output
             output_max   => 1000,  -- Max limit for control output
@@ -155,7 +155,7 @@ begin
     begin
 		if  rising_edge(clk)  then
         -- Normalize and adjust the phase shift input for PI controller
-        control_input <=  (elapsed_time_ns_s1/2 - elapsed_time_ns_phase)/1048576; -- Adjusting the phase shift change from 8 to 1048576
+        control_input <=  (elapsed_time_ns_s1/2 - elapsed_time_ns_phase)/64; -- Adjusting the phase shift change from 8 to 1048576
 		end if;
        
     end process;

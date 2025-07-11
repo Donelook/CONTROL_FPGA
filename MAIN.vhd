@@ -180,9 +180,10 @@ architecture Behavioral of MAIN is
 
     -- Signals for current shift and PWM duty cycle
     signal pwm_duty_input     : integer := 0;  -- Output of current_shift to control the PWM duty cycle
+    --signal pwm_duty_input_test     : integer := 500;  -- Output of current_shift to control the PWM duty cycle
           -- Phase shift between S1 and S3
-	signal S1_buffor     : std_logic := '0';       -- 
-    signal S3_buffor     : std_logic := '0';       -- 
+--	signal S1_buffor     : std_logic := '0';       -- 
+  --  signal S3_buffor     : std_logic := '0';       -- 
 	
 	--- RGB signal
 	signal red : std_logic; 
@@ -376,18 +377,18 @@ begin
             -- Error output signal
             
         );
-        process(s1_phy,s3_phy)
-    begin
-        S1_buffor<=s1_phy;
-		S3_buffor<=s3_phy;
-    end process;
+      --  process(s1_phy,s3_phy)
+    --begin
+    --    S1_buffor<=s1_phy;
+	--	S3_buffor<=s3_phy;
+   -- end process;
 		 -- Instantiate the current_shift module to calculate the integer value
     current_shift_inst: current_shift
         Port map (
             clk             => clk_100mhz,
             reset           => reset,
-            S1              => S1_buffor,                -- Input S1 signal
-            S3              => S3_buffor,                -- Input S3 signal
+            S1              => s1_phy,                -- Input S1 signal
+            S3              => s3_phy,                -- Input S3 signal
             control_out     => pwm_duty_input     -- Output for PWM duty cycle control
         );
 
