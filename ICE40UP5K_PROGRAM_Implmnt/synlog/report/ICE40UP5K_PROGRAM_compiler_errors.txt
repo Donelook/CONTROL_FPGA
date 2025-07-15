@@ -1,3 +1,4 @@
-@E: CD648 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":176:38:176:38|Expression does not match type std_ulogic
-@E::Errors while synthesizing top module MAIN.
+@E: CD178 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":411:31:411:40|Can't find formal enable
+@E: Parse errors encountered - exiting
+@E::VHDL compiler failed
 

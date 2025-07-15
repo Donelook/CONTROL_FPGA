@@ -45,13 +45,13 @@ begin
         elsif rising_edge(clk) then
             if enable = '1' then  -- Check if the controller is enabled for this cycle
                 -- Calculate the control error
-                error_control <= setpoint - measured;
+                --error_control <= setpoint - measured;
 
                 -- Proportional term
-                prop_term <= kp * error_control;
+                prop_term <= kp * measured;--error_control;
 
                 -- Integral term calculation
-                integrator <= integrator + (ki * error_control)/16;
+                integrator <= integrator + (ki * measured);
 
                 -- Calculate unclamped output
                 output_unclamped <= prop_term + integrator;
@@ -79,7 +79,7 @@ begin
                 --integrator <= integrator + anti_windup;
 
                 -- Store previous error for next cycle
-                prev_error <= error_control;
+                prev_error <= measured;
             end if;
         end if;
     end process;

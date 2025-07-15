@@ -90,10 +90,13 @@ architecture Behavioral of MAIN is
     component current_shift
         Port (
             clk            : in  std_logic;
+            clk2           : in  std_logic;
             reset          : in  std_logic;
+            enable          : in  std_logic;
             S1             : in  std_logic;
             S3             : in  std_logic;
             control_out    : out integer
+            
         );
     end component;
 
@@ -200,6 +203,9 @@ architecture Behavioral of MAIN is
      signal    il_min_comp2_D1   :  std_logic := '0';
      signal    il_min_comp2_D2   :  std_logic := '0';
      
+     signal clk_10khz : std_logic := '0';
+     constant DIVISOR : integer := 5025;  -- Half-period for 50% duty
+    signal counter   : integer range 0 to DIVISOR-1 := 0;
      --attribute syn_global_buffers : integer;
      --architecture behave of syn_global_buffers is 10; 
      --signal    delay_hc_D1   :  std_logic := '0';
@@ -233,8 +239,23 @@ begin
             PLLOUTGLOBAL => clk_100mhz,     -- 100 MHz output clock
             RESET        => not reset        	-- Reset input for PLL
         );
-   	--	clock_output <= clk_100mhz;
+	
 		
+		process(clk_100mhz, reset)
+    begin
+        if reset = '1' then
+            counter <= 0;
+            clk_10khz <= '0';
+        elsif rising_edge(clk_100mhz) then
+            if counter = DIVISOR-1 then
+                counter <= 0;
+                clk_10khz <= not clk_10khz;
+            else
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+
 	--	process(clk_100mhz)
 	--	begin
     --		if rising_edge(clk_100mhz) then
@@ -385,11 +406,14 @@ begin
 		 -- Instantiate the current_shift module to calculate the integer value
     current_shift_inst: current_shift
         Port map (
-            clk             => clk_100mhz,
+            clk             => clk_10khz,
+            clk2            => clk_100mhz,
             reset           => reset,
+            enable          => start_stop,         -- enable
             S1              => s1_phy,                -- Input S1 signal
             S3              => s3_phy,                -- Input S3 signal
             control_out     => pwm_duty_input     -- Output for PWM duty cycle control
+            
         );
 
     -- Instantiate the PWM_GENERATOR to convert integer from current_shift into PWM signal

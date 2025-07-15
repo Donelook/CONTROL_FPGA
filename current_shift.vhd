@@ -7,10 +7,14 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity CURRENT_SHIFT is
     Port (
         clk             : in  std_logic;            -- System clock
+		clk2             : in  std_logic;            -- 100 mhz clock for timers
         reset           : in  std_logic;            -- Synchronous reset
+        enable           : in  std_logic;            -- enable
         S1              : in  std_logic;            -- Signal S1
         S3              : in  std_logic;            -- Signal S3
-        control_out     : out integer               -- Output from PI controller
+        control_out     : out integer              -- Output from PI controller
+        
+     --   enable			: out std_logic
     );
 end CURRENT_SHIFT;
 
@@ -71,7 +75,7 @@ begin
     -- Instance of the timer module for S1 frequency
     timer_s1: timer
         Port map (
-            clk             => clk,
+            clk             => clk2,
             reset           => reset,
             start_timer     => start_timer_s1,
             stop_timer      => stop_timer_s1,
@@ -83,7 +87,7 @@ begin
     -- Instance of the timer module for phase shift measurement
     timer_phase: timer
         Port map (
-            clk             => clk,
+            clk             => clk2,
             reset           => reset,
             start_timer     => start_timer_phase,
             stop_timer      => stop_timer_phase,
@@ -95,7 +99,7 @@ begin
         Port map (
             clk          => clk,
             reset        => reset,
-            enable       => '1',
+            enable       => enable,
             setpoint     => 0,  -- Setpoint is zero (0.5 - phase_shift_ratio should be zero ideally)
             measured     => control_input,
             kp           => 1,  -- Proportional gain
@@ -114,7 +118,7 @@ begin
 
         elsif rising_edge(S1) then
             -- Detect rising edge of S1 for frequency and phase measurement
-            if start_timer_s1 = '0' then
+            if start_timer_s1 = '0'  then
                 stop_timer_s1 <= '0';
                 start_timer_s1 <= '1'; -- Start frequency timer for S1
                 --start_timer_phase <= '1'; -- Start phase timer
@@ -153,7 +157,7 @@ begin
     -- Calculate the phase shift ratio and feed it into the PI controller
     process(clk, elapsed_time_ns_s1, elapsed_time_ns_phase)
     begin
-		if  rising_edge(clk)  then
+		if  rising_edge(clk) AND enable = '1' then
         -- Normalize and adjust the phase shift input for PI controller
         control_input <=  (elapsed_time_ns_s1/2 - elapsed_time_ns_phase)/64; -- Adjusting the phase shift change from 8 to 1048576
 		end if;
