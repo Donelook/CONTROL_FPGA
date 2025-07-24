@@ -1,0 +1,28 @@
+
+fsm_encoding {15698691} onehot
+
+fsm_state_encoding {15698691} readytogo_state {00001}
+
+fsm_state_encoding {15698691} t01a_state {00010}
+
+fsm_state_encoding {15698691} t12a_state {00100}
+
+fsm_state_encoding {15698691} t23a_state {01000}
+
+fsm_state_encoding {15698691} t45a_state {10000}
+
+fsm_registers {15698691} {state[0]}  {state[1]}  {state[2]}  {state[3]}  {state[4]} 
+
+fsm_encoding {15698691} onehot
+
+fsm_state_encoding {15698691} readytogo_state {00001}
+
+fsm_state_encoding {15698691} t01a_state {00010}
+
+fsm_state_encoding {15698691} t12a_state {00100}
+
+fsm_state_encoding {15698691} t23a_state {01000}
+
+fsm_state_encoding {15698691} t45a_state {10000}
+
+fsm_registers {15698691} {state[0]}  {state[1]}  {state[2]}  {state[3]}  {state[4]} 

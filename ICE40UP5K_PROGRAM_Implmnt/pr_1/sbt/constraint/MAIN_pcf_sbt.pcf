@@ -4,7 +4,7 @@
 
 # Version:            2020.12.27943
 
-# File Generated:     Jul 15 2025 13:10:58
+# File Generated:     Jul 24 2025 19:51:53
 
 # Family & Device:    iCE40UP5K
 
@@ -28,5 +28,5 @@ set_io il_min_comp2 48
 set_io s3_phy 36
 
 ###ProDemote List 1
-demote_signal_unbuffered N_748_g
+demote_signal_unbuffered N_605_g
 

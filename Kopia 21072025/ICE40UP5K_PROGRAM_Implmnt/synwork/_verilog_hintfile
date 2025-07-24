@@ -1,0 +1,113 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\bin64\\c_vhdl.exe":1717163150
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\location.map":1717163153
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\std.vhd":1717163153
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1717163153
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\std1164.vhd":1717163153
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\std_textio.vhd":1717163153
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\numeric.vhd":1717163153
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1717163153
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\arith.vhd":1717163153
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\unsigned.vhd":1717163153
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\PI_CONTROLLER.vhd":1752577795
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\PWM_GENERATOR.vhd":1742338027
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\stoper.vhd":1744315194
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\timer.vhd":1741980661
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\current_shift.vhd":1752535552
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\delay_measurement.vhd":1744566531
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\phase_controller.vhd":1743708774
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\MAIN.vhd":1752535577
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40_components_syn.vhd":1717163152
+@E8lFkRDCvhqQ
+LDHs$NsRsIF	M
+HbRk0sCC#0
+R4HkMb00R#N_s0#b0FRH4
+M0bkR_HDl_NGObFl4
+R4HkMb0DRH_GlN_lOFb4.R
+bHMkH0RDH_lMF_OlRb44M
+HbRk0HlD_HOM_F.lbRH4
+M0bkRD8CN0$_sM_HbRk04M
+HbRk08NCD$O_E_bHMk40R
+0FkbRk0#b4_E4$R
+0FkbRk0#b._E4$R
+0FkbRk0#bd_E4$R
+0FkbRk0#bc_E4$R
+0FkbRk0b_IlFbk0k40R
+0FkbRk0s_oLs
+R4Fbk0ks0RooL_RF4
+kk0b0oRsLR_L4M
+C88lFk
+DClkF8DbCRECN#_MOF0DsFD
+CsDsHLNRs$I	Fs
+bHMkO0RD4	R
+bHMks0RC0#CRH4
+M0bkRN#0s40R
+bHMkQ0RpN_lGF_Ol4bR
+bHMkQ0RpH_lMF_Ol4bR
+bHMk80RC$DN_REOdH.
+M0bkRD8CN0$_s.Rd
+0FkbRk0144R
+0FkbRk014.R
+0FkbRk0aRj44k
+F00bkR.a4RF4
+kk0b0.Rad
+R4Fbk0ka0Rc46R
+8CMlkF8DlC
+FD8kCCR8D_N$l#CNklsCC
+M0DsHLNRs$I	Fs
+bHMkO0RD4	R
+bHMks0RC0#CRH4
+M0bkRD8CN0$_sH_#oDMNRH4
+M0bkRD8CNE$_OH_#oDMNRF4
+kk0b0CR8D_N$0dsR.k
+F00bkRD8CNE$_O.Rd
+8CMlkF8DlC
+FD8kCzRB)h) a]_1Q
+waDsHLNRs$I	Fs
+bHMkO0RD4	R
+bHMkO0RDR	.4M
+HbRk0sCC#0
+R4HkMb0MRCNCLDRH4
+M0bkRR144M
+HbRk014dR
+0FkbRk0O0FMs_FDFRk0dC.
+MF8l8CkD
+8lFkRDC0CHlsH
+DLssN$FRIsH	
+M0bkR	ODRH4
+M0bkR#sCC40R
+bHMk#0R00Ns_l0HC4sR
+bHMk#0R0_Fb0CHls
+R4Fbk0kC0RD#NbC08_H_lCMd#R.M
+C88lFk
+DClkF8D#CR0CFbsH
+DLssN$FRIsH	
+M0bkR	ODRH4
+M0bkR#sCC40R
+bHMk#0R00NsRH4
+M0bkRs8kNF0HM#_MR
+d.Fbk0k00RH_lCb#N#C48R
+8CMlkF8DlC
+FD8kCWRuv _thq )a
+m)DsHLNRs$I	Fs
+bHMkO0RD4	R
+bHMks0RC0#CRH4
+M0bkR08k$M_HbRk0dF.
+kk0b0IRblk_F0
+R4ClM8FD8kCF
+l8CkDR_uQBamh)pmp D)
+HNLssI$RF
+s	HkMb0DRO	
+R4HkMb0CRs#RC04M
+HbRk0CLMND4CR
+bHMk#0RCF0bHRM0dH.
+M0bkRNlC#Cks8.Rd
+bHMk	0Rb.Rd
+bHMk	0RH.Rd
+bHMkF0Rkk0b0H_lM.Rd
+bHMkF0Rkk0b0N_lG.Rd
+0FkbRk0O0FMs_FDFRk0dC.
+MF8l8CkD
+
+@ 

@@ -37,9 +37,9 @@ architecture Behavioral of phase_controller is
         Port (
             clk             : in  std_logic;            -- System clock (100 MHz)
             reset           : in  std_logic;            -- Synchronous reset
-            start    : in  std_logic;            -- Start timer
+            start    		: in  std_logic;            -- Start timer
             duration_ns     : in integer;            -- stoper duration 
-            time_passed : out  std_logic         -- time passed of stoper
+            time_passed 	: out  std_logic         -- time passed of stoper
         );
     end component;
 begin
@@ -97,6 +97,7 @@ begin
 			
                 	T01 <= '1';
 					T45 <= '0';
+					T23 <='0';
 					
                     S1 <= '1';
                     S2 <= '0';
@@ -104,11 +105,13 @@ begin
                     if IL_max_comp = '1' then
                         state <= T12A_STATE;
                         start_timer_hc <= '1';  -- Start the stoper for delay_hc
+                        --T12 <= '1';
                     end if;
 
                 when T12A_STATE =>
 					T12 <= '1';
 					T01 <= '0';
+					--T23 <='1';
 					
                     S1 <= '0';
                     S2 <= '0';
@@ -121,7 +124,8 @@ begin
 
                 when T23A_STATE =>
 					T23 <='1';
-					T12 <= '0';
+					T12 <= '1';
+					
                     S1 <= '0';
                     S2 <= '1';
                     if IL_min_comp = '1' then
@@ -131,7 +135,9 @@ begin
 
                 when T45A_STATE =>
 					T45 <= '1';
-					T23 <='0';
+					T12 <= '0';
+					--T23 <='1';
+					
                     S1 <= '0';
                     S2 <= '0';
                     if tr_time_passed = '1' then

@@ -1,5 +1,5 @@
 %%% protect protected_file
-#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\bin64\\c_vhdl.exe":1717163150
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\location.map":1717163153
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\std.vhd":1717163153
@@ -10,14 +10,15 @@
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1717163153
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\arith.vhd":1717163153
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd2008\\unsigned.vhd":1717163153
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\PI_CONTROLLER.vhd":1752577795
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\PI_CONTROLLER.vhd":1753177220
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\PWM_GENERATOR.vhd":1742338027
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\stoper.vhd":1744315194
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\timer.vhd":1741980661
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\current_shift.vhd":1752535552
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\timer.vhd":1753136617
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\current_shift.vhd":1753138487
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\delay_measurement.vhd":1744566531
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\phase_controller.vhd":1743708774
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\MAIN.vhd":1752535577
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\phase_controller_second.vhd":1753379411
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\phase_controller.vhd":1753388696
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\MAIN.vhd":1753380834
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40_components_syn.vhd":1717163152
 @E8lFkRDCvhqQ
 LDHs$NsRsIF	M
@@ -54,60 +55,80 @@ F00bkR.a4RF4
 kk0b0.Rad
 R4Fbk0ka0Rc46R
 8CMlkF8DlC
-FD8kCCR8D_N$l#CNklsCC
-M0DsHLNRs$I	Fs
-bHMkO0RD4	R
-bHMks0RC0#CRH4
-M0bkRD8CN0$_sH_#oDMNRH4
-M0bkRD8CNE$_OH_#oDMNRF4
-kk0b0CR8D_N$0dsR.k
-F00bkRD8CNE$_O.Rd
-8CMlkF8DlC
-FD8kCzRB)h) a]_1Q
-waDsHLNRs$I	Fs
-bHMkO0RD4	R
-bHMkO0RDR	.4M
-HbRk0sCC#0
-R4HkMb0MRCNCLDRH4
-M0bkRR144M
-HbRk014dR
-0FkbRk0O0FMs_FDFRk0dC.
-MF8l8CkD
-8lFkRDC0CHlsH
-DLssN$FRIsH	
-M0bkR	ODRH4
-M0bkR#sCC40R
-bHMk#0R00Ns_l0HC4sR
-bHMk#0R0_Fb0CHls
-R4Fbk0kC0RD#NbC08_H_lCMd#R.M
-C88lFk
-DClkF8D#CR0CFbsH
+FD8kCERbN_#CO0FMsDFDC#s_CMOF8H
 DLssN$FRIsH	
 M0bkR	ODRH4
 M0bkR#sCC40R
 bHMk#0R00NsRH4
-M0bkRs8kNF0HM#_MR
-d.Fbk0k00RH_lCb#N#C48R
-8CMlkF8DlC
-FD8kCWRuv _thq )a
-m)DsHLNRs$I	Fs
-bHMkO0RD4	R
-bHMks0RC0#CRH4
-M0bkR08k$M_HbRk0dF.
-kk0b0IRblk_F0
-R4ClM8FD8kCF
-l8CkDR_uQBamh)pmp D)
+M0bkRN#0sV0_DRNo4M
+HbRk0Qlp_NOG_FRlb4M
+HbRk0Qlp_HOM_FRlb4M
+HbRk08NCD$O_ER
+d.HkMb0CR8D_N$0dsR.k
+F00bkRR144k
+F00bkRR1.4k
+F00bkR4ajRF4
+kk0b04Ra.
+R4Fbk0ka0R.4dR
+0FkbRk0aRc64M
+C88lFk
+DClkF8D8CRC$DN_NlC#Cksl0CM
+LDHs$NsRsIF	M
+HbRk0ORD	4M
+HbRk0sCC#0
+R4HkMb0CR8D_N$0#s_HNoMD
+R4HkMb0CR8D_N$E#O_HNoMD
+R4Fbk0k80RC$DN_R0sdF.
+kk0b0CR8D_N$EdOR.M
+C88lFk
+DClkF8DBCRz ))h1a_]aQw
+LDHs$NsRsIF	M
+HbRk0ORD	4M
+HbRk0O.D	RH4
+M0bkR#sCC40R
+bHMkC0RMDNLC
+R4HkMb04R1RH4
+M0bkRR1d4k
+F00bkRMOF0DsF_0FkR
+d.ClM8FD8kCF
+l8CkDRl0HCDs
 HNLssI$RF
 s	HkMb0DRO	
 R4HkMb0CRs#RC04M
-HbRk0CLMND4CR
-bHMk#0RCF0bHRM0dH.
-M0bkRNlC#Cks8.Rd
-bHMk	0Rb.Rd
-bHMk	0RH.Rd
-bHMkF0Rkk0b0H_lM.Rd
-bHMkF0Rkk0b0N_lG.Rd
-0FkbRk0O0FMs_FDFRk0dC.
+HbRk0#s0N0H_0lRCs4M
+HbRk0#b0F_l0HC4sR
+0FkbRk0CbDN#_C80CHl_RM#dC.
 MF8l8CkD
+8lFkRDC#b0FCDs
+HNLssI$RF
+s	HkMb0DRO	
+R4HkMb0CRs#RC04M
+HbRk0#s0N0
+R4HkMb0kR8sHN0FMM_#.Rd
+0FkbRk00CHl_#bN#RC84M
+C88lFk
+DClkF8DuCRWtv_ )h q)am
+LDHs$NsRsIF	M
+HbRk0ORD	4M
+HbRk0sCC#0
+R4HkMb0kR80H$_M0bkR
+d.Fbk0kb0RIFl_k40R
+8CMlkF8DlC
+FD8kCQRu_hBmap)mp
+ )DsHLNRs$I	Fs
+bHMkO0RD4	R
+bHMks0RC0#CRH4
+M0bkRNCMLRDC4M
+HbRk0#bC0F0HMR
+d.HkMb0CRlNs#kCd8R.M
+HbRk0	dbR.M
+HbRk0	dHR.M
+HbRk0Fbk0kl0_HdMR.M
+HbRk0Fbk0kl0_NdGR.k
+F00bkRMOF0DsF_0FkR
+d.ClM8FD8kC
+
+
+
 
 @ 

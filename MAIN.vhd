@@ -129,12 +129,31 @@ architecture Behavioral of MAIN is
 			D : in  std_logic -- Data
 		);
 		end component;
-    -- Component declaration for PHASE_CONTROLLER
+    -- Component declaration for PHASE_CONTROLLER MASTER
     component PHASE_CONTROLLER
         Port (
             clk           : in  std_logic;
             reset         : in  std_logic;
             start         : in  std_logic;
+            IL_max_comp   : in  std_logic;
+            IL_min_comp   : in  std_logic;
+            delay_hc      : in  integer;
+            delay_tr      : in  integer;
+            S1            : out std_logic;
+            S2            : out std_logic;
+            T01  			: out std_logic;   -- test signal
+        	T12    			: out std_logic;   -- test signal
+        	T23    			: out std_logic;   -- test signal
+        	T45    			: out std_logic   -- test signal
+        );
+    end component;
+    -- Component declaration for PHASE_CONTROLLER SECOND SLAVE
+    component PHASE_CONTROLLER_SECOND
+        Port (
+            clk           : in  std_logic;
+            reset         : in  std_logic;
+            start         : in  std_logic;
+            start_flag    : in  std_logic;
             IL_max_comp   : in  std_logic;
             IL_min_comp   : in  std_logic;
             delay_hc      : in  integer;
@@ -193,7 +212,7 @@ architecture Behavioral of MAIN is
 	signal green : std_logic; 
 	signal blue : std_logic; 
 
-	 signal 	il_max_comp1_D1  :  std_logic := '0';   -- Current limit comparator 1 (max)
+	 signal    il_max_comp1_D1  :  std_logic := '0';   -- Current limit comparator 1 (max)
      signal    il_max_comp1_D2   :  std_logic := '0';   -- Current limit comparator 1 (max)
      signal    il_min_comp1_D1   :  std_logic := '0';
      signal    il_min_comp1_D2   :  std_logic := '0';
@@ -204,8 +223,10 @@ architecture Behavioral of MAIN is
      signal    il_min_comp2_D2   :  std_logic := '0';
      
      signal clk_10khz : std_logic := '0';
-     constant DIVISOR : integer := 5025;  -- Half-period for 50% duty
-    signal counter   : integer range 0 to DIVISOR-1 := 0;
+     constant DIVISOR : integer := 5249;  -- Half-period for 50% duty
+     signal counter   : integer range 0 to DIVISOR-1 := 0;
+     
+     signal shift_flag_start : std_logic := '0';
      --attribute syn_global_buffers : integer;
      --architecture behave of syn_global_buffers is 10; 
      --signal    delay_hc_D1   :  std_logic := '0';
@@ -273,6 +294,7 @@ begin
     	--	end if;
 		--end process;
 		
+		-- Double D flip flop to synchronize and prevent from metastability
 		SB_DFF_inst_DELAY_TR1: SB_DFF
 		port map (
 			Q => delay_tr_d1, -- Registered Output
@@ -310,6 +332,7 @@ begin
             delay_hc        => measured_delay_hc   -- Output measured HC delay
         );
         
+        -- Double D flip flop to synchronize and prevent from metastability
 	SB_DFF_inst_PH1_MAX_D1: SB_DFF
 		port map (
 			Q => il_max_comp1_D1, -- Registered Output
@@ -350,7 +373,7 @@ begin
             S2              => s2_phy,                 -- Output to transistor S2
         	T01  			=> OPEN,
         	T12  			=> OPEN,    			
-        	T23  			=> OPEN,    			
+        	T23  			=> shift_flag_start,    			
         	T45  			=> OPEN    			
         );
 	-- Two D flip flop to prevent metastability
@@ -380,11 +403,12 @@ begin
 			D => il_min_comp2_D1 -- Data
 		);
     -- Instantiate the second PHASE_CONTROLLER module (for controlling S3 and S4)
-    phase_controller_inst2: PHASE_CONTROLLER
+    phase_controller_slave: PHASE_CONTROLLER_SECOND
         Port map (
             clk             => clk_100mhz,
             reset           => reset,
             start           => start_stop,         -- Same start/stop control
+            start_flag      => shift_flag_start,         
             IL_max_comp     => il_max_comp2_D2,       -- Connect comparator signal 2 (max current)
             IL_min_comp     => il_min_comp2_D2,       -- Connect comparator signal 2 (min current)
             delay_hc        => measured_delay_hc,  -- Same measured delay for HC
@@ -412,8 +436,7 @@ begin
             enable          => start_stop,         -- enable
             S1              => s1_phy,                -- Input S1 signal
             S3              => s3_phy,                -- Input S3 signal
-            control_out     => pwm_duty_input     -- Output for PWM duty cycle control
-            
+            control_out     => pwm_duty_input     -- Output for PWM duty cycle control  
         );
 
     -- Instantiate the PWM_GENERATOR to convert integer from current_shift into PWM signal

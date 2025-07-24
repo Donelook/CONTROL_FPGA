@@ -8,6 +8,7 @@ add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokume
 add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/PWM_GENERATOR.vhd"
 add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/current_shift.vhd"
 add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/delay_measurement.vhd"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/phase_controller_second.vhd"
 add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/phase_controller.vhd"
 add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/stoper.vhd"
 add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/timer.vhd"
