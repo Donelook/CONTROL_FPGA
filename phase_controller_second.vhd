@@ -87,7 +87,7 @@ begin
                     start_timer_hc <= '0';
             		start_timer_tr <= '0';
                    
-                    if start = '1' then --and start_flag = '0'
+                    if start = '1' and start_flag = '1' then
                     	
                        -- start_flag <= '1';
                         state <= T01A_STATE;

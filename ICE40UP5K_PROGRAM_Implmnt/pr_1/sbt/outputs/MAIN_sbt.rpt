@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jul 24 2025 22:26:14
+* File Generated:     Jul 24 2025 23:36:30
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 0 seconds
+    Runtime: 1 seconds
 
 Device Info:
 ------------
@@ -27,8 +27,8 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  690
-    LUTs:                 1349
+    FFs:                  691
+    LUTs:                 1341
     RAMs:                 0
     IOBs:                 13
     GBs:                  4
@@ -46,12 +46,12 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1403/5280
-        Combinational Logic Cells: 713      out of   5280      13.5038%
-        Sequential Logic Cells:    690      out of   5280      13.0682%
-        Logic Tiles:               283      out of   660       42.8788%
+    Total Logic Cells: 1395/5280
+        Combinational Logic Cells: 704      out of   5280      13.3333%
+        Sequential Logic Cells:    691      out of   5280      13.0871%
+        Logic Tiles:               263      out of   660       39.8485%
     Registers: 
-        Logic Registers:           690      out of   5280      13.0682%
+        Logic Registers:           691      out of   5280      13.0871%
         IO Registers:              0        out of   480       0
     Block RAMs:                    0        out of   30        0%
     Warm Boots:                    0        out of   1         0%
@@ -105,7 +105,7 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                      
     -------------  -------  ---------  ------  -----------                                      
-    0              2        IO         635     red_c_g                                          
+    0              2        IO         636     red_c_g                                          
     5              2                   31      delay_measurement_inst.delay_hc_timer.N_335_i_g  
     3              0                   32      current_shift_inst.timer_s1.N_187_i_g            
     1              0                   31      current_shift_inst.timer_phase.N_188_i_g         
@@ -118,9 +118,9 @@ Router Summary:
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     9872 out of 110555      8.92949%
-                          Span 4     1972 out of  23008      8.57093%
-                         Span 12      214 out of   4464      4.79391%
+              Local line of tile     9869 out of 110555      8.92678%
+                          Span 4     1823 out of  23008      7.92333%
+                         Span 12      196 out of   4464      4.39068%
                   Global network        6 out of      8      75%
-      Vertical Inter-LUT Connect       57 out of   4620      1.23377%
+      Vertical Inter-LUT Connect       58 out of   4620      1.25541%
 

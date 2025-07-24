@@ -9,18 +9,18 @@ Part:			ICE40UP5KSG48 (Lattice)
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     690                100 %                
+FLOPS     691                100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN:	690 (25.88 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN:	691 (26.00 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       1207               100 %                
+LUTS       1198               100 %                
 CARRYS     681                100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN:	1888 (70.82 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN:	1879 (70.69 % Utilization)
 
 
 IO PADS
@@ -38,18 +38,18 @@ Instance path:   MAIN.CURRENT_SHIFT
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     266                38.6 %               
+FLOPS     266                38.5 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN.CURRENT_SHIFT:	266 (9.98 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN.CURRENT_SHIFT:	266 (10.01 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       494                40.9 %               
+LUTS       496                41.4 %               
 CARRYS     323                47.4 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.CURRENT_SHIFT:	817 (30.65 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.CURRENT_SHIFT:	819 (30.81 % Utilization)
 
 
 IO PADS
@@ -69,16 +69,16 @@ Name      Total elements     Utilization     Notes
 --------------------------------------------------
 FLOPS     101                14.6 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block CURRENT_SHIFT.PI_CONTROLLER:	101 (3.79 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block CURRENT_SHIFT.PI_CONTROLLER:	101 (3.80 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       155                12.8 %               
+LUTS       157                13.1 %               
 CARRYS     62                 9.1 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block CURRENT_SHIFT.PI_CONTROLLER:	217 (8.14 % Utilization)
+Total COMBINATIONAL LOGIC in the block CURRENT_SHIFT.PI_CONTROLLER:	219 (8.24 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   timer_2   ########
@@ -88,18 +88,18 @@ Instance path:   CURRENT_SHIFT.timer_2
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     63                 9.13 %               
+FLOPS     63                 9.12 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block CURRENT_SHIFT.timer_2:	63 (2.36 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block CURRENT_SHIFT.timer_2:	63 (2.37 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       92                 7.62 %               
+LUTS       92                 7.68 %               
 CARRYS     57                 8.37 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block CURRENT_SHIFT.timer_2:	149 (5.59 % Utilization)
+Total COMBINATIONAL LOGIC in the block CURRENT_SHIFT.timer_2:	149 (5.61 % Utilization)
 
 
 IO PADS
@@ -117,7 +117,7 @@ Instance path:   CURRENT_SHIFT.timer_3
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     62                 8.99 %               
+FLOPS     62                 8.97 %               
 ==================================================
 Total SEQUENTIAL ELEMENTS in the block CURRENT_SHIFT.timer_3:	62 (2.33 % Utilization)
 
@@ -125,10 +125,10 @@ Total SEQUENTIAL ELEMENTS in the block CURRENT_SHIFT.timer_3:	62 (2.33 % Utiliza
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       112                9.28 %               
+LUTS       112                9.35 %               
 CARRYS     57                 8.37 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block CURRENT_SHIFT.timer_3:	169 (6.34 % Utilization)
+Total COMBINATIONAL LOGIC in the block CURRENT_SHIFT.timer_3:	169 (6.36 % Utilization)
 
 
 IO PADS
@@ -152,16 +152,16 @@ Name      Total elements     Utilization     Notes
 --------------------------------------------------
 FLOPS     31                 4.49 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN.PWM_GENERATOR:	31 (1.16 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN.PWM_GENERATOR:	31 (1.17 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       104                8.62 %               
+LUTS       98                 8.18 %               
 CARRYS     83                 12.2 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.PWM_GENERATOR:	187 (7.01 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.PWM_GENERATOR:	181 (6.81 % Utilization)
 
 -----------------------------------------------------------------------
 ########   Utilization report for  cell:   delay_measurement   ########
@@ -173,16 +173,16 @@ Name      Total elements     Utilization     Notes
 --------------------------------------------------
 FLOPS     183                26.5 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN.delay_measurement:	183 (6.86 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN.delay_measurement:	183 (6.88 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       232                19.2 %               
+LUTS       225                18.8 %               
 CARRYS     114                16.7 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.delay_measurement:	346 (12.98 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.delay_measurement:	339 (12.75 % Utilization)
 
 
 IO PADS
@@ -200,7 +200,7 @@ Instance path:   delay_measurement.timer
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     62                 8.99 %               
+FLOPS     62                 8.97 %               
 ==================================================
 Total SEQUENTIAL ELEMENTS in the block delay_measurement.timer:	62 (2.33 % Utilization)
 
@@ -208,10 +208,10 @@ Total SEQUENTIAL ELEMENTS in the block delay_measurement.timer:	62 (2.33 % Utili
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       82                 6.79 %               
+LUTS       83                 6.93 %               
 CARRYS     57                 8.37 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block delay_measurement.timer:	139 (5.21 % Utilization)
+Total COMBINATIONAL LOGIC in the block delay_measurement.timer:	140 (5.27 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   timer_1   ########
@@ -221,7 +221,7 @@ Instance path:   delay_measurement.timer_1
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     62                 8.99 %               
+FLOPS     62                 8.97 %               
 ==================================================
 Total SEQUENTIAL ELEMENTS in the block delay_measurement.timer_1:	62 (2.33 % Utilization)
 
@@ -229,10 +229,10 @@ Total SEQUENTIAL ELEMENTS in the block delay_measurement.timer_1:	62 (2.33 % Uti
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       92                 7.62 %               
+LUTS       86                 7.18 %               
 CARRYS     57                 8.37 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block delay_measurement.timer_1:	149 (5.59 % Utilization)
+Total COMBINATIONAL LOGIC in the block delay_measurement.timer_1:	143 (5.38 % Utilization)
 
 
 IO PADS
@@ -252,16 +252,16 @@ Name      Total elements     Utilization     Notes
 --------------------------------------------------
 FLOPS     93                 13.5 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller:	93 (3.49 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller:	93 (3.50 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       212                17.6 %               
+LUTS       213                17.8 %               
 CARRYS     75                 11 %                 
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.phase_controller:	287 (10.77 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.phase_controller:	288 (10.84 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   stoper   ########
@@ -271,7 +271,7 @@ Instance path:   phase_controller.stoper
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     42                 6.09 %               
+FLOPS     42                 6.08 %               
 ==================================================
 Total SEQUENTIAL ELEMENTS in the block phase_controller.stoper:	42 (1.58 % Utilization)
 
@@ -279,10 +279,10 @@ Total SEQUENTIAL ELEMENTS in the block phase_controller.stoper:	42 (1.58 % Utili
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       109                9.03 %               
+LUTS       108                9.02 %               
 CARRYS     38                 5.58 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block phase_controller.stoper:	147 (5.51 % Utilization)
+Total COMBINATIONAL LOGIC in the block phase_controller.stoper:	146 (5.49 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   stoper_0   ########
@@ -292,7 +292,7 @@ Instance path:   phase_controller.stoper_0
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     41                 5.94 %               
+FLOPS     41                 5.93 %               
 ==================================================
 Total SEQUENTIAL ELEMENTS in the block phase_controller.stoper_0:	41 (1.54 % Utilization)
 
@@ -300,10 +300,10 @@ Total SEQUENTIAL ELEMENTS in the block phase_controller.stoper_0:	41 (1.54 % Uti
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       91                 7.54 %               
+LUTS       92                 7.68 %               
 CARRYS     37                 5.43 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block phase_controller.stoper_0:	128 (4.80 % Utilization)
+Total COMBINATIONAL LOGIC in the block phase_controller.stoper_0:	129 (4.85 % Utilization)
 
 -----------------------------------------------------------------------------
 ########   Utilization report for  cell:   phase_controller_second   ########
@@ -313,18 +313,18 @@ Instance path:   MAIN.phase_controller_second
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     91                 13.2 %               
+FLOPS     92                 13.3 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller_second:	91 (3.41 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block MAIN.phase_controller_second:	92 (3.46 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       143                11.8 %               
+LUTS       144                12 %                 
 CARRYS     75                 11 %                 
 ===================================================
-Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_second:	218 (8.18 % Utilization)
+Total COMBINATIONAL LOGIC in the block MAIN.phase_controller_second:	219 (8.24 % Utilization)
 
 ----------------------------------------------------------------
 ########   Utilization report for  cell:   stoper_0_0   ########
@@ -334,7 +334,7 @@ Instance path:   phase_controller_second.stoper_0_0
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     41                 5.94 %               
+FLOPS     41                 5.93 %               
 ==================================================
 Total SEQUENTIAL ELEMENTS in the block phase_controller_second.stoper_0_0:	41 (1.54 % Utilization)
 
@@ -342,10 +342,10 @@ Total SEQUENTIAL ELEMENTS in the block phase_controller_second.stoper_0_0:	41 (1
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       65                 5.39 %               
+LUTS       65                 5.43 %               
 CARRYS     37                 5.43 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block phase_controller_second.stoper_0_0:	102 (3.83 % Utilization)
+Total COMBINATIONAL LOGIC in the block phase_controller_second.stoper_0_0:	102 (3.84 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   stoper_1   ########
@@ -355,7 +355,7 @@ Instance path:   phase_controller_second.stoper_1
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     42                 6.09 %               
+FLOPS     42                 6.08 %               
 ==================================================
 Total SEQUENTIAL ELEMENTS in the block phase_controller_second.stoper_1:	42 (1.58 % Utilization)
 
@@ -363,10 +363,10 @@ Total SEQUENTIAL ELEMENTS in the block phase_controller_second.stoper_1:	42 (1.5
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       65                 5.39 %               
+LUTS       65                 5.43 %               
 CARRYS     38                 5.58 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block phase_controller_second.stoper_1:	103 (3.86 % Utilization)
+Total COMBINATIONAL LOGIC in the block phase_controller_second.stoper_1:	103 (3.88 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

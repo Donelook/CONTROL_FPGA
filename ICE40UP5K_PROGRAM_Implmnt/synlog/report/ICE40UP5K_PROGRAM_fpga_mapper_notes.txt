@@ -9,7 +9,7 @@
 @N: BN362 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\stoper.vhd":39:8:39:9|Removing sequential instance phase_controller_slave.stoper_tr.target_time[0] (in view: work.MAIN(behavioral)) because it does not drive other instances.
 @N: FX271 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\timer.vhd":30:8:30:9|Replicating instance current_shift_inst.timer_s1.elapsed_time_ns_1[31] (in view: work.MAIN(behavioral)) with 9 loads 1 time to improve timing.
 @N: FX1016 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\main.vhd":29:8:29:12|SB_GB_IO inserted on the port reset.
-@N: FX1017 :|SB_GB inserted on the net N_605.
+@N: FX1017 :|SB_GB inserted on the net N_655.
 @N: FX1017 :|SB_GB inserted on the net N_187_i.
 @N: FX1017 :|SB_GB inserted on the net N_188_i.
 @N: FX1017 :|SB_GB inserted on the net N_335_i.

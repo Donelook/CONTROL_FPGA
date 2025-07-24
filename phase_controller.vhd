@@ -86,7 +86,7 @@ begin
                     S2 <= '0';
                     start_timer_hc <= '0';
             		start_timer_tr <= '0';
-                   
+                   	T01 <= '0';
                     if start = '1' then --and start_flag = '0'
                     	
                        -- start_flag <= '1';
@@ -94,8 +94,7 @@ begin
                     end if;
 
                 when T01A_STATE =>
-			
-                	T01 <= '1';
+                	
 					T45 <= '0';
 					T23 <='0';
 					
@@ -105,12 +104,12 @@ begin
                     if IL_max_comp = '1' then
                         state <= T12A_STATE;
                         start_timer_hc <= '1';  -- Start the stoper for delay_hc
-                        --T12 <= '1';
+                        
                     end if;
 
                 when T12A_STATE =>
 					T12 <= '1';
-					T01 <= '0';
+					T01 <= '1';
 					--T23 <='1';
 					
                     S1 <= '0';
@@ -142,7 +141,7 @@ begin
                     S2 <= '0';
                     if tr_time_passed = '1' then
 						start_timer_tr <= '0';  -- Stop the stoper for delay_tr
-
+						T01 <= '0';
                         state <= T01A_STATE;
                     end if;
 

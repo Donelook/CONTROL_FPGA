@@ -371,9 +371,9 @@ begin
             delay_tr        => measured_delay_tr,  -- Use measured delay for TR from delay_measurement
             S1              => s1_phy,                 -- Output to transistor S1
             S2              => s2_phy,                 -- Output to transistor S2
-        	T01  			=> OPEN,
+        	T01  			=> shift_flag_start,
         	T12  			=> OPEN,    			
-        	T23  			=> shift_flag_start,    			
+        	T23  			=> OPEN,    			
         	T45  			=> OPEN    			
         );
 	-- Two D flip flop to prevent metastability
