@@ -11,13 +11,13 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @W: CD134 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":64:28:64:42|No such identifier, delay_hc_signal, of proper type in current declarative region
 VHDL syntax check successful!
 @N: CD231 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd changed - recompiling
+File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd changed - recompiling
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 75MB)
 
 
 Process completed successfully.
-# Thu Jul 24 23:34:48 2025
+# Tue Oct 07 00:26:41 2025
 
 ###########################################################]
 Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -36,7 +36,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Thu Jul 24 23:34:48 2025
+# Tue Oct 07 00:26:41 2025
 
 ###########################################################]
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ps
@@ -53,7 +53,7 @@ File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PR
 File C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40_components_syn.vhd changed - recompiling
 @W: CD134 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":64:28:64:42|No such identifier, delay_hc_signal, of proper type in current declarative region
 VHDL syntax check successful!
-File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd changed - recompiling
+File C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd changed - recompiling
 @N: CD231 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":25:7:25:10|Synthesizing work.main.behavioral.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\PWM_GENERATOR.vhd":5:7:5:19|Synthesizing work.pwm_generator.behavioral.
@@ -101,8 +101,8 @@ Post processing for work.phase_controller.behavioral
 @W: CL169 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd":69:8:69:9|Pruning unused register start_flag_2. Make sure that there are no unused intermediate registers.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":6:7:6:23|Synthesizing work.delay_measurement.behavioral.
 @N: CD233 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":50:20:50:21|Using sequential encoding for type meas_state.
-@N: CD604 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":144:20:144:33|OTHERS clause is not synthesized.
-@N: CD604 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":199:20:199:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":147:20:147:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":202:20:202:33|OTHERS clause is not synthesized.
 Post processing for work.delay_measurement.behavioral
 Post processing for work.main.behavioral
 @N: CL189 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":94:8:94:9|Register bit delay_tr_reg(20) is always 0.
@@ -152,7 +152,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 
 
 Process completed successfully.
-# Thu Jul 24 23:34:48 2025
+# Tue Oct 07 00:26:42 2025
 
 ###########################################################]
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
@@ -176,7 +176,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Thu Jul 24 23:34:48 2025
+# Tue Oct 07 00:26:42 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -195,7 +195,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Jul 24 23:34:48 2025
+# Tue Oct 07 00:26:42 2025
 
 ###########################################################]
 @END
@@ -205,6 +205,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Jul 24 23:34:48 2025
+# Tue Oct 07 00:26:42 2025
 
 ###########################################################]

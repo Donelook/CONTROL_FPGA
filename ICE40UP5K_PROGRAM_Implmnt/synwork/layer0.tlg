@@ -45,8 +45,8 @@ Post processing for work.phase_controller.behavioral
 @W: CL169 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller.vhd":69:8:69:9|Pruning unused register start_flag_2. Make sure that there are no unused intermediate registers.
 @N: CD630 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":6:7:6:23|Synthesizing work.delay_measurement.behavioral.
 @N: CD233 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":50:20:50:21|Using sequential encoding for type meas_state.
-@N: CD604 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":144:20:144:33|OTHERS clause is not synthesized.
-@N: CD604 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":199:20:199:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":147:20:147:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":202:20:202:33|OTHERS clause is not synthesized.
 Post processing for work.delay_measurement.behavioral
 Post processing for work.main.behavioral
 @N: CL189 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":94:8:94:9|Register bit delay_tr_reg(20) is always 0.

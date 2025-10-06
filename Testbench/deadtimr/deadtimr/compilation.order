@@ -1,0 +1,11 @@
+.\src\current_shift.vhd
+.\src\delay_measurement.vhd
+.\src\ICE40_MAIN_PROGRAM_100MHZ_pll.v
+.\src\MAIN.vhd
+.\src\phase_controller.vhd
+.\src\phase_controller_second.vhd
+.\src\PI_CONTROLLER.vhd
+.\src\PWM_GENERATOR.vhd
+.\src\Second_Phase_Control.vhd
+.\src\stoper.vhd
+.\src\timer.vhd

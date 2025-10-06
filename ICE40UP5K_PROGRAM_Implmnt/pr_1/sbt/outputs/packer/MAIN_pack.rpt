@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jul 24 2025 23:36:30
+* File Generated:     Oct 7 2025 00:28:41
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 1 seconds
+    Runtime: 0 seconds
 
 Device Info:
 ------------
@@ -28,7 +28,7 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  691
-    LUTs:                 1341
+    LUTs:                 1338
     RAMs:                 0
     IOBs:                 13
     GBs:                  4
@@ -46,10 +46,10 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1395/5280
-        Combinational Logic Cells: 704      out of   5280      13.3333%
+    Total Logic Cells: 1392/5280
+        Combinational Logic Cells: 701      out of   5280      13.2765%
         Sequential Logic Cells:    691      out of   5280      13.0871%
-        Logic Tiles:               263      out of   660       39.8485%
+        Logic Tiles:               307      out of   660       46.5152%
     Registers: 
         Logic Registers:           691      out of   5280      13.0871%
         IO Registers:              0        out of   480       0
@@ -106,6 +106,6 @@ Detailed Global Buffer Info:
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                      
     -------------  -------  ---------  ------  -----------                                      
     0              2        IO         636     red_c_g                                          
-    5              2                   31      delay_measurement_inst.delay_hc_timer.N_335_i_g  
+    5              2                   31      delay_measurement_inst.delay_hc_timer.N_336_i_g  
     3              0                   32      current_shift_inst.timer_s1.N_187_i_g            
     1              0                   31      current_shift_inst.timer_phase.N_188_i_g         

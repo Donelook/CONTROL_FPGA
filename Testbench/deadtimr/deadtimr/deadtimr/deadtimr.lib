@@ -1,0 +1,60 @@
+timestamp=1759789042545
+
+[~A]
+ModifyID=5
+Version=74
+
+[~MFT]
+0=2|0deadtimr.mgf|15077|3265
+1=2|1deadtimr.mgf|15330|9531
+3=2|3deadtimr.mgf|4518|1455
+
+[delay_measurement]
+A/behavioral=A/Behavioral 21|../src/delay_measurement.vhd|17|1*15330
+BinW64/behavioral=3*4518
+I=0*723
+I/behavioral=I/Behavioral 0*15077
+M=11|2|vf5|1759786746400|../src/delay_measurement.vhd|0*232*0xaab4f11d32e1c052d9be6f4b5d708e35203185e4|0*624*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|2|vf5|1759789042542|../src/delay_measurement.vhd|0*12086*0xa36bf378a057ffafbdfaea47c6a5188fa754b238|0*14964*0x20116f55b147878295aeff36dce7fc50
+R=../src/delay_measurement.vhd|6
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|8fd5eefdc14925705c72bd6c1b916ed398d227b5cb7dde9fddbbd51bfff92a37ba4831561e5834fb06bfe052012f9411
+Version/behavioral=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4afbb9a588a3da3e9b66127c597f3159b
+
+[phase_controller]
+A/behavioral=A/Behavioral 21|../src/phase_controller.vhd|23|1*9886
+BinW64/behavioral=3*3421
+I=0*9579
+I/behavioral=I/Behavioral 0*11791
+M=11|2|vf5|1759787514128|../src/phase_controller.vhd|0*8955*0xb8eea3b91f860b7192d0959fb0d43298bdc8b210|0*9482*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|2|vf5|1759787514130|../src/phase_controller.vhd|0*9827*0x9b08e2c3e34e1d0e3f15c82002dacba47ccf1b16|0*11680*0x20116f55b147878295aeff36dce7fc50
+R=../src/phase_controller.vhd|5
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|6d0b92799ed47e5f080b6006f98f2756c82d95922bae8e8de3fe1b62c778f633d68c1bc85b7f38935d6fab10de570aaf
+Version/behavioral=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4e5ac5262206a8696551735a24b324075
+
+[stoper]
+A/behavioral=A/Behavioral 21|../src/stoper.vhd|15|1*6570
+BinW64/behavioral=3*1455
+I=0*4846
+I/behavioral=I/Behavioral 0*6391
+M=11|2|vf5|1759786759846|../src/stoper.vhd|0*4456*0x04bddf0fe89e709a34a5590a61581735d8be9696|0*4769*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|2|vf5|1759786759848|../src/stoper.vhd|0*5084*0x859d601db451ed15e224a4b6736724fefb11338d|0*6300*0x20116f55b147878295aeff36dce7fc50
+R=../src/stoper.vhd|5
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|d5a3c3b7c9491f040a872b147785cb2384f4deb7ebcda61845410ab069bb20f3
+Version/behavioral=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff428013b16072f0b572d381645b47c40cd
+
+[timer]
+A/behavioral=A/Behavioral 21|../src/timer.vhd|15|1*8130
+BinW64/behavioral=3*2508
+I=0*7245
+I/behavioral=I/Behavioral 0*8443
+M=11|2|vf5|1759786759853|../src/timer.vhd|0*6852*0x27660134602c6ae9113513f195c9237a41c3ffeb|0*7170*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|2|vf5|1759786759855|../src/timer.vhd|0*7482*0xa8a36569c7a6a93cca8ccfdc502bf2bf902debad|0*8354*0x20116f55b147878295aeff36dce7fc50
+R=../src/timer.vhd|5
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|c2ae8f0b7b95b6d69da7be83d99f8f493f6865adb7092b36d6247891d5d02b45
+Version/behavioral=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff49b500a0a04e7063a9ffdf33ac3eedb82
+
+[~U]
+delay_measurement=11|0*0|
+phase_controller=11|0*8691|
+stoper=11|0*4237|
+timer=11|0*6640|

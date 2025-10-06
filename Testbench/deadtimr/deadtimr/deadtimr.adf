@@ -1,0 +1,47 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=deadtimr
+[Library]
+deadtimr=.\deadtimr\deadtimr.lib
+[$LibMap$]
+deadtimr=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+fileopenfolder=C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\Testbench
+[IMPLEMENTATION]
+UCF=
+[Files]
+/current_shift.vhd=-1
+/delay_measurement.vhd=-1
+/ICE40_MAIN_PROGRAM_100MHZ_pll.v=-1
+/MAIN.vhd=-1
+/phase_controller.vhd=-1
+/phase_controller_second.vhd=-1
+/PI_CONTROLLER.vhd=-1
+/PWM_GENERATOR.vhd=-1
+/Second_Phase_Control.vhd=-1
+/stoper.vhd=-1
+/timer.vhd=-1
+[Files.Data]
+.\src\current_shift.vhd=VHDL Source Code
+.\src\delay_measurement.vhd=VHDL Source Code
+.\src\ICE40_MAIN_PROGRAM_100MHZ_pll.v=Verilog Source Code
+.\src\MAIN.vhd=VHDL Source Code
+.\src\phase_controller.vhd=VHDL Source Code
+.\src\phase_controller_second.vhd=VHDL Source Code
+.\src\PI_CONTROLLER.vhd=VHDL Source Code
+.\src\PWM_GENERATOR.vhd=VHDL Source Code
+.\src\Second_Phase_Control.vhd=VHDL Source Code
+.\src\stoper.vhd=VHDL Source Code
+.\src\timer.vhd=VHDL Source Code

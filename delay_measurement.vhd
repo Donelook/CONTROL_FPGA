@@ -100,16 +100,11 @@ begin
                 stop_timer_tr  <= '0';
                 delay_tr_reg  <= MIN_MEASURE;
             else
-                -- Latch previous cycle's TR signal to detect rising edge
+                  -- Latch previous cycle's TR signal to detect rising edge
                 prev_tr_sig <= delay_tr_signal;
+				   start_timer_tr <= '0';
+                   stop_timer_tr  <= '0';
 
-                -- Check the measured time each cycle
-                -- (Clamp to [10, 1_000_000], store in delay_tr_reg)
-                if elapsed_time_tr > MIN_MEASURE and elapsed_time_tr < MAX_MEASURE then
-                    delay_tr_reg <= elapsed_time_tr;
-                elsif elapsed_time_tr > MAX_MEASURE then
-                    delay_tr_reg <= MAX_MEASURE;
-                end if;
 
                 -- Main TR state machine
                 case tr_state is
@@ -119,26 +114,34 @@ begin
                         if (prev_tr_sig = '0') and (delay_tr_signal = '1') then
                             -- Start the timer
                             start_timer_tr <= '1';
-                            stop_timer_tr  <= '0';
+                           -- stop_timer_tr  <= '0';
                             tr_state       <= WAIT_SECOND_EDGE;
                         else
                             -- Keep outputs inactive
-                            start_timer_tr <= '0';
-                            stop_timer_tr  <= '0';
-                            tr_state       <= IDLE;
+                           -- start_timer_tr <= '0';
+                           -- stop_timer_tr  <= '0';
+                           -- tr_state       <= IDLE;
                         end if;
 
                     when WAIT_SECOND_EDGE =>
                         -- If we detect another rising edge, stop the timer
                         if (prev_tr_sig = '0') and (delay_tr_signal = '1') then
-                            start_timer_tr <= '0';
+                            --start_timer_tr <= '0';
                             stop_timer_tr  <= '1';
-                            tr_state       <= IDLE;  -- measurement done, go back to IDLE
+                            tr_state       <= IDLE;  -- measurement done, go back to IDLE  
+							
+							-- Check the measured time each cycle
+                -- (Clamp to [10, 1_000_000], store in delay_tr_reg)
+                			if elapsed_time_tr > MIN_MEASURE and elapsed_time_tr < MAX_MEASURE then
+                   				 delay_tr_reg <= elapsed_time_tr;
+               				 elsif elapsed_time_tr > MAX_MEASURE then
+                    			delay_tr_reg <= MAX_MEASURE;
+                			end if;
                         else
                             -- Remain in this state, keep timer running
-                            start_timer_tr <= '1';
-                            stop_timer_tr  <= '0';
-                            tr_state       <= WAIT_SECOND_EDGE;
+                           -- start_timer_tr <= '1';
+                           -- stop_timer_tr  <= '0';
+                            --tr_state       <= WAIT_SECOND_EDGE;
                         end if;
 
                     when others =>
