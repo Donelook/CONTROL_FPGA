@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Oct 7 2025 00:28:41
+* File Generated:     Oct 8 2025 23:18:00
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 0 seconds
+    Runtime: 1 seconds
 
 Device Info:
 ------------
@@ -28,7 +28,7 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  691
-    LUTs:                 1338
+    LUTs:                 1337
     RAMs:                 0
     IOBs:                 13
     GBs:                  4
@@ -46,10 +46,10 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1392/5280
-        Combinational Logic Cells: 701      out of   5280      13.2765%
+    Total Logic Cells: 1391/5280
+        Combinational Logic Cells: 700      out of   5280      13.2576%
         Sequential Logic Cells:    691      out of   5280      13.0871%
-        Logic Tiles:               307      out of   660       46.5152%
+        Logic Tiles:               266      out of   660       40.303%
     Registers: 
         Logic Registers:           691      out of   5280      13.0871%
         IO Registers:              0        out of   480       0
@@ -106,7 +106,7 @@ Detailed Global Buffer Info:
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                      
     -------------  -------  ---------  ------  -----------                                      
     0              2        IO         636     red_c_g                                          
-    5              2                   31      delay_measurement_inst.delay_hc_timer.N_336_i_g  
+    5              2                   31      delay_measurement_inst.delay_hc_timer.N_321_i_g  
     3              0                   32      current_shift_inst.timer_s1.N_187_i_g            
     1              0                   31      current_shift_inst.timer_phase.N_188_i_g         
 
@@ -114,13 +114,13 @@ Detailed Global Buffer Info:
 Router Summary:
 ---------------
     Status:  Successful
-    Runtime: 9 seconds
+    Runtime: 8 seconds
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     9891 out of 110555      8.94668%
-                          Span 4     2137 out of  23008      9.28807%
-                         Span 12      283 out of   4464      6.33961%
+              Local line of tile     9736 out of 110555      8.80648%
+                          Span 4     2018 out of  23008      8.77086%
+                         Span 12      233 out of   4464      5.21953%
                   Global network        6 out of      8      75%
-      Vertical Inter-LUT Connect       52 out of   4620      1.12554%
+      Vertical Inter-LUT Connect       65 out of   4620      1.40693%
 

@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:45:10
 
-* File Generated:     Oct 7 2025 00:28:41
+* File Generated:     Oct 8 2025 23:18:00
 
 * Purpose:            Router runtime info
 
@@ -21,14 +21,27 @@ Info-1409: Inferred clock at osc/CLKHF
 Info-1404: Inferred PLL generated clock at pll_inst.ICE40_MAIN_PROGRAM_100MHZ_pll_inst/PLLOUTCORE
 Info-1404: Inferred PLL generated clock at pll_inst.ICE40_MAIN_PROGRAM_100MHZ_pll_inst/PLLOUTGLOBAL
 I1209: Started routing
-I1223: Total Nets : 1957 
-I1212: Iteration  1 :   211 unrouted : 3 seconds
-I1212: Iteration  2 :    42 unrouted : 1 seconds
-I1212: Iteration  3 :    46 unrouted : 0 seconds
-I1212: Iteration  4 :     2 unrouted : 0 seconds
+I1223: Total Nets : 1966 
+I1212: Iteration  1 :   275 unrouted : 2 seconds
+I1212: Iteration  2 :    33 unrouted : 1 seconds
+I1212: Iteration  3 :    14 unrouted : 0 seconds
+I1212: Iteration  4 :     4 unrouted : 0 seconds
 I1212: Iteration  5 :     2 unrouted : 0 seconds
 I1212: Iteration  6 :     2 unrouted : 0 seconds
-I1212: Iteration  7 :     0 unrouted : 0 seconds
+I1212: Iteration  7 :     2 unrouted : 0 seconds
+I1212: Iteration  8 :     2 unrouted : 0 seconds
+I1212: Iteration  9 :     2 unrouted : 0 seconds
+I1212: Iteration 10 :     2 unrouted : 0 seconds
+I1212: Iteration 11 :     2 unrouted : 0 seconds
+I1212: Iteration 12 :     2 unrouted : 0 seconds
+I1212: Iteration 13 :     2 unrouted : 0 seconds
+I1212: Iteration 14 :     2 unrouted : 0 seconds
+I1212: Iteration 15 :     2 unrouted : 0 seconds
+I1212: Iteration 16 :     2 unrouted : 0 seconds
+I1212: Iteration 17 :     2 unrouted : 0 seconds
+I1212: Iteration 18 :     2 unrouted : 0 seconds
+I1212: Iteration 19 :     2 unrouted : 0 seconds
+I1212: Iteration 20 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
 I1204: Writing Design MAIN

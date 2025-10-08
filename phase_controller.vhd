@@ -129,6 +129,7 @@ begin
                     S2 <= '1';
                     if IL_min_comp = '1' then
                         state <= T45A_STATE;
+                        T01 <= '0';
                         start_timer_tr <= '1';  -- Stop the stoper for delay_tr
                     end if;
 
@@ -141,7 +142,7 @@ begin
                     S2 <= '0';
                     if tr_time_passed = '1' then
 						start_timer_tr <= '0';  -- Stop the stoper for delay_tr
-						T01 <= '0';
+						--T01 <= '0';
                         state <= T01A_STATE;
                     end if;
 

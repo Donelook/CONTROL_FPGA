@@ -1,4 +1,4 @@
-# Tue Oct 07 00:26:44 2025
+# Wed Oct 08 21:32:22 2025
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -151,26 +151,26 @@ Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    -2.84ns		1300 /       678
-   2		0h:00m:01s		    -2.84ns		1299 /       678
+   1		0h:00m:01s		    -2.84ns		1297 /       678
+   2		0h:00m:01s		    -2.84ns		1296 /       678
 @N: FX271 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\timer.vhd":30:8:30:9|Replicating instance current_shift_inst.timer_s1.elapsed_time_ns_1[31] (in view: work.MAIN(behavioral)) with 9 loads 1 time to improve timing.
 Timing driven replication report
 Added 1 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
-   3		0h:00m:01s		    -2.84ns		1299 /       679
+   3		0h:00m:01s		    -2.84ns		1296 /       679
 
 
-   4		0h:00m:01s		    -2.84ns		1299 /       679
+   4		0h:00m:01s		    -2.84ns		1296 /       679
 Re-levelizing using alternate method
-Assigned 0 out of 2855 signals to level zero using alternate method
+Assigned 0 out of 2852 signals to level zero using alternate method
 @N: FX1016 :"c:\users\michal\documents\magisterka\magisterka dokumenty wyjsciowe\fpga\program\control_fpga_qsw_dc_dc_10kw_fpga_vhdl-main\main.vhd":29:8:29:12|SB_GB_IO inserted on the port reset.
-@N: FX1017 :|SB_GB inserted on the net N_717.
+@N: FX1017 :|SB_GB inserted on the net N_702.
 @N: FX1017 :|SB_GB inserted on the net N_187_i.
 @N: FX1017 :|SB_GB inserted on the net N_188_i.
-@N: FX1017 :|SB_GB inserted on the net N_336_i.
+@N: FX1017 :|SB_GB inserted on the net N_321_i.
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 156MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 155MB peak: 156MB)
 
          Loop details will only be printed for 100 loops.
 
@@ -199,7 +199,7 @@ Clock Tree ID     Driving Element                                 Drive Element 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 125MB peak: 156MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 126MB peak: 156MB)
 
 Writing Analyst data base C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\synwork\ICE40UP5K_PROGRAM_m.srm
 
@@ -211,10 +211,10 @@ Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\ICE40UP5K_PROGRAM.edf
 L-2016.09L+ice40
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 153MB peak: 156MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 156MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 152MB peak: 156MB)
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 152MB peak: 156MB)
 
 Warning: Found 2 combinational loops!
          Loop details will only be printed for 100 loops.
@@ -240,7 +240,7 @@ End of loops
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Oct 07 00:26:46 2025
+# Timing Report written on Wed Oct 08 21:32:24 2025
 #
 
 
@@ -2152,10 +2152,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 156MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 156MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 156MB)
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 156MB)
 
 ---------------------------------------
 Resource Usage Report for MAIN 
@@ -2166,10 +2166,10 @@ GND             15 uses
 SB_CARRY        681 uses
 SB_DFF          21 uses
 SB_DFFE         40 uses
-SB_DFFER        425 uses
+SB_DFFER        424 uses
 SB_DFFESR       13 uses
 SB_DFFESS       2 uses
-SB_DFFR         139 uses
+SB_DFFR         140 uses
 SB_DFFS         10 uses
 SB_DFFSR        39 uses
 SB_DFFSS        2 uses
@@ -2180,7 +2180,7 @@ SB_RGBA_DRV     1 use
 VCC             15 uses
 SB_MAC16            2 uses
   MULTONLY  2 uses
-SB_LUT4         1196 uses
+SB_LUT4         1194 uses
 
 I/O ports: 16
 I/O primitives: 13
@@ -2194,16 +2194,16 @@ Total load per clock:
    ICE40_MAIN_PROGRAM_100MHZ_pll|PLLOUTGLOBAL_derived_clock: 691
 
 @S |Mapping Summary:
-Total  LUTs: 1196 (22%)
+Total  LUTs: 1194 (22%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 1196 = 1196 
+Distribution of All Consumed Luts 1194 = 1194 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 33MB peak: 156MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 34MB peak: 156MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Tue Oct 07 00:26:46 2025
+# Wed Oct 08 21:32:24 2025
 
 ###########################################################]

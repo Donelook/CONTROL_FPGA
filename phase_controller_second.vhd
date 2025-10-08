@@ -89,7 +89,7 @@ begin
                    
                     if start = '1' and start_flag = '1' then
                     	
-                       -- start_flag <= '1';
+                      
                         state <= T01A_STATE;
                     end if;
 
@@ -97,10 +97,10 @@ begin
 			
                 	T01 <= '1';
 					T45 <= '0';
-					if start_flag = '1' then 
+					--if start_flag = '1' then 
                     S1 <= '1';
                     S2 <= '0';
-                    end if;
+                    --end if;
                     
                     if IL_max_comp = '1' then
                         state <= T12A_STATE;
@@ -138,7 +138,7 @@ begin
                     if tr_time_passed = '1' then
 						start_timer_tr <= '0';  -- Stop the stoper for delay_tr
 
-                        state <= T01A_STATE;
+                        state <= ReadyToGo_STATE;
                     end if;
 
                 when others =>
