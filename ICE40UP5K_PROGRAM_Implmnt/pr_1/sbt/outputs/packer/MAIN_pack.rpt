@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Oct 8 2025 23:18:00
+* File Generated:     Oct 8 2025 23:57:48
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 1 seconds
+    Runtime: 0 seconds
 
 Device Info:
 ------------
@@ -27,8 +27,8 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  691
-    LUTs:                 1337
+    FFs:                  380
+    LUTs:                 662
     RAMs:                 0
     IOBs:                 13
     GBs:                  4
@@ -40,18 +40,18 @@ Design statistics:
     LFOSCs:               0
     RGBA_DRVs:            1
     LEDDA_IPs:            0
-    DSPs:                 2
+    DSPs:                 0
     SPRAMs:               0
     FILTER_50NSs:         0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1391/5280
-        Combinational Logic Cells: 700      out of   5280      13.2576%
-        Sequential Logic Cells:    691      out of   5280      13.0871%
-        Logic Tiles:               266      out of   660       40.303%
+    Total Logic Cells: 668/5280
+        Combinational Logic Cells: 288      out of   5280      5.45455%
+        Sequential Logic Cells:    380      out of   5280      7.19697%
+        Logic Tiles:               139      out of   660       21.0606%
     Registers: 
-        Logic Registers:           691      out of   5280      13.0871%
+        Logic Registers:           380      out of   5280      7.19697%
         IO Registers:              0        out of   480       0
     Block RAMs:                    0        out of   30        0%
     Warm Boots:                    0        out of   1         0%
@@ -61,7 +61,7 @@ Logic Resource Utilization:
     LFOSCs:                        0        out of   1         0%
     RGBA_DRVs:                     1        out of   1         100%
     LEDDA_IPs:                     0        out of   1         0%
-    DSPs:                          2        out of   8         25%
+    DSPs:                          0        out of   8         0%
     SPRAMs:                        0        out of   4         0%
     FILTER_50NSs:                  0        out of   2         0%
     Pins:
@@ -105,7 +105,7 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                      
     -------------  -------  ---------  ------  -----------                                      
-    0              2        IO         636     red_c_g                                          
-    5              2                   31      delay_measurement_inst.delay_hc_timer.N_321_i_g  
-    3              0                   32      current_shift_inst.timer_s1.N_187_i_g            
-    1              0                   31      current_shift_inst.timer_phase.N_188_i_g         
+    0              2        IO         363     red_c_g                                          
+    3              0                   31      delay_measurement_inst.delay_tr_timer.N_138_i_g  
+    1              0                   31      delay_measurement_inst.delay_hc_timer.N_136_i_g  
+    5              2                   30      delay_measurement_inst.delay_tr_timer.N_139_i_g  

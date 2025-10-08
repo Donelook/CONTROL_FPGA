@@ -1,4 +1,4 @@
-@E: CD192 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\phase_controller_second.vhd":72:12:72:21|target of assignment is not writeable
+@E: CD242 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":275:6:275:8|Expecting ;
 @E: Parse errors encountered - exiting
 @E::VHDL compiler failed
 

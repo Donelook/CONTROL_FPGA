@@ -14,82 +14,82 @@
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\PWM_GENERATOR.vhd":1742338027
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\stoper.vhd":1744315194
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\timer.vhd":1753136617
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\current_shift.vhd":1753138487
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\delay_measurement.vhd":1759789599
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\phase_controller_second.vhd":1759951940
 #CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\phase_controller.vhd":1759951800
-#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\MAIN.vhd":1753391939
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\MAIN.vhd":1759959985
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40_components_syn.vhd":1717163152
-@E8lFkRDCvhqQ
-LDHs$NsRsIF	M
-HbRk0sCC#0
-R4HkMb00R#N_s0#b0FRH4
-M0bkR_HDl_NGObFl4
-R4HkMb0DRH_GlN_lOFb4.R
-bHMkH0RDH_lMF_OlRb44M
-HbRk0HlD_HOM_F.lbRH4
-M0bkRD8CN0$_sM_HbRk04M
-HbRk08NCD$O_E_bHMk40R
-0FkbRk0#b4_E4$R
-0FkbRk0#b._E4$R
-0FkbRk0#bd_E4$R
-0FkbRk0#bc_E4$R
-0FkbRk0b_IlFbk0k40R
-0FkbRk0s_oLs
-R4Fbk0ks0RooL_RF4
-kk0b0oRsLR_L4M
-C88lFk
-DClkF8DbCRECN#_MOF0DsFD
-CsDsHLNRs$I	Fs
-bHMkO0RD4	R
-bHMks0RC0#CRH4
-M0bkRN#0s40R
-bHMkQ0RpN_lGF_Ol4bR
-bHMkQ0RpH_lMF_Ol4bR
-bHMk80RC$DN_REOdH.
-M0bkRD8CN0$_s.Rd
-0FkbRk0144R
-0FkbRk014.R
-0FkbRk0aRj44k
-F00bkR.a4RF4
-kk0b0.Rad
-R4Fbk0ka0Rc46R
+#CUR:"C:\\Users\\Michal\\Documents\\Magisterka\\Magisterka dokumenty wyjsciowe\\FPGA\\PROGRAM\\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\\current_shift.vhd":1753138487
+@E8lFkRDCB)z) _ha1w]QaH
+DLssN$FRIsH	
+M0bkR	ODRH4
+M0bkR	OD.
+R4HkMb0CRs#RC04M
+HbRk0CLMND4CR
+bHMk10R4
+R4HkMb0dR1RF4
+kk0b0FROMF0sDk_F0.Rd
 8CMlkF8DlC
-FD8kCERbN_#CO0FMsDFDC#s_CMOF8H
+FD8kCqRvQDh
+HNLssI$RF
+s	HkMb0CRs#RC04M
+HbRk0#s0N00_#F4bR
+bHMkH0RDN_lGF_OlRb44M
+HbRk0HlD_NOG_F.lbRH4
+M0bkR_HDl_HMObFl4
+R4HkMb0DRH_MlH_lOFb4.R
+bHMk80RC$DN__0sHkMb0
+R4HkMb0CR8D_N$EHO_M0bkRF4
+kk0b04R#_$bERF4
+kk0b0.R#_$bERF4
+kk0b0dR#_$bERF4
+kk0b0cR#_$bERF4
+kk0b0IRblk_F00bkRF4
+kk0b0oRsLR_s4k
+F00bkRLso_4oR
+0FkbRk0s_oLL
+R4ClM8FD8kCF
+l8CkDRNbE#OC_FsM0FCDDsH
 DLssN$FRIsH	
 M0bkR	ODRH4
 M0bkR#sCC40R
 bHMk#0R00NsRH4
-M0bkRN#0sV0_DRNo4M
-HbRk0Qlp_NOG_FRlb4M
-HbRk0Qlp_HOM_FRlb4M
-HbRk08NCD$O_ER
-d.HkMb0CR8D_N$0dsR.k
-F00bkRR144k
-F00bkRR1.4k
-F00bkR4ajRF4
-kk0b04Ra.
-R4Fbk0ka0R.4dR
-0FkbRk0aRc64M
-C88lFk
-DClkF8D8CRC$DN_NlC#Cksl0CM
-LDHs$NsRsIF	M
-HbRk0ORD	4M
-HbRk0sCC#0
-R4HkMb0CR8D_N$0#s_HNoMD
-R4HkMb0CR8D_N$E#O_HNoMD
-R4Fbk0k80RC$DN_R0sdF.
-kk0b0CR8D_N$EdOR.M
-C88lFk
-DClkF8DBCRz ))h1a_]aQw
-LDHs$NsRsIF	M
-HbRk0ORD	4M
-HbRk0O.D	RH4
-M0bkR#sCC40R
-bHMkC0RMDNLC
-R4HkMb04R1RH4
-M0bkRR1d4k
-F00bkRMOF0DsF_0FkR
+M0bkR_Qpl_NGObFlRH4
+M0bkR_Qpl_HMObFlRH4
+M0bkRD8CNE$_O.Rd
+bHMk80RC$DN_R0sdF.
+kk0b04R1RF4
+kk0b0.R1RF4
+kk0b0jRa4
+R4Fbk0ka0R44.R
+0FkbRk0aR.d4k
+F00bkR6acRC4
+MF8l8CkD
+8lFkRDCb#ENCF_OMF0sDsDC_O#CF
+M8DsHLNRs$I	Fs
+bHMkO0RD4	R
+bHMks0RC0#CRH4
+M0bkRN#0s40R
+bHMk#0R00Ns_NVDo
+R4HkMb0pRQ_GlN_lOFb
+R4HkMb0pRQ_MlH_lOFb
+R4HkMb0CR8D_N$EdOR.M
+HbRk08NCD$s_0R
+d.Fbk0k10R4
+R4Fbk0k10R.
+R4Fbk0ka0Rj44R
+0FkbRk0aR4.4k
+F00bkRda.RF4
+kk0b0cRa6
+R4ClM8FD8kCF
+l8CkDRD8CNl$_CkN#sCClMD0
+HNLssI$RF
+s	HkMb0DRO	
+R4HkMb0CRs#RC04M
+HbRk08NCD$s_0_o#HMRND4M
+HbRk08NCD$O_E_o#HMRND4k
+F00bkRD8CN0$_s.Rd
+0FkbRk08NCD$O_ER
 d.ClM8FD8kCF
 l8CkDRl0HCDs
 HNLssI$RF

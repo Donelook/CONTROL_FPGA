@@ -189,7 +189,7 @@ architecture Behavioral of MAIN is
     
     -- Internal signals for clocking and control
     signal clk_100mhz         : std_logic;   -- PLL generated 100 MHz clock
-    
+    signal clk_100mhz1         : std_logic;   -- PLL generated 100 MHz clock
 
     -- Signals for delay measurement
     signal measured_delay_tr  : integer := 0;
@@ -221,7 +221,7 @@ architecture Behavioral of MAIN is
      signal    il_max_comp2_D2   :  std_logic := '0';   -- Current limit comparator 1 (max)
      signal    il_min_comp2_D1   :  std_logic := '0';
      signal    il_min_comp2_D2   :  std_logic := '0';
-     
+     signal pll_locked : std_logic := '0';
      signal clk_10khz : std_logic := '0';
      constant DIVISOR : integer := 5249;  -- Half-period for 50% duty
      signal counter   : integer range 0 to DIVISOR-1 := 0;
@@ -236,7 +236,7 @@ architecture Behavioral of MAIN is
 begin
 	osc_enable   <= '1';  -- Enable oscillator
      	osc_powerup  <= '1';  -- Power up oscillator
-
+		
 	-- Instantiate the internal high-frequency oscillator (HFOSC)
    	osc:SB_HFOSC
 		generic map
@@ -258,24 +258,28 @@ begin
             REFERENCECLK => clk_12mhz,    	-- 12 MHz input clock
             PLLOUTCORE   => open,   		-- Not used
             PLLOUTGLOBAL => clk_100mhz,     -- 100 MHz output clock
+           -- LOCK        => pll_locked,    -- Monitor this!
             RESET        => not reset        	-- Reset input for PLL
         );
+        
+        -- Use pll_locked to gate your logic:
 	
+	--clk_100mhz <= ICE40_MAIN_PROGRAM_100MHZ_pll.PLLOUTGLOBAL;
 		
-		process(clk_100mhz, reset)
-    begin
-        if reset = '1' then
-            counter <= 0;
-            clk_10khz <= '0';
-        elsif rising_edge(clk_100mhz) then
-            if counter = DIVISOR-1 then
-                counter <= 0;
-                clk_10khz <= not clk_10khz;
-            else
-                counter <= counter + 1;
-            end if;
-        end if;
-    end process;
+	--	process(clk_100mhz, reset)
+   -- begin
+   --     if reset = '1' then
+    --        counter <= 0;
+     --       clk_10khz <= '0';
+   --     elsif rising_edge(clk_100mhz) then
+      --      if counter = DIVISOR-1 then
+        --        counter <= 0;
+      --          clk_10khz <= not clk_10khz;
+       --     else
+       --         counter <= counter + 1;
+       --     end if;
+      --  end if;
+   -- end process;
 
 	--	process(clk_100mhz)
 	--	begin
@@ -428,25 +432,25 @@ begin
 	--	S3_buffor<=s3_phy;
    -- end process;
 		 -- Instantiate the current_shift module to calculate the integer value
-    current_shift_inst: current_shift
-        Port map (
-            clk             => clk_10khz,
-            clk2            => clk_100mhz,
-            reset           => reset,
-            enable          => start_stop,         -- enable
-            S1              => s1_phy,                -- Input S1 signal
-            S3              => s3_phy,                -- Input S3 signal
-            control_out     => pwm_duty_input     -- Output for PWM duty cycle control  
-        );
+   -- current_shift_inst: current_shift
+       -- Port map (
+         --   clk             => clk_10khz,
+         --   clk2            => clk_100mhz,
+         --   reset           => reset,
+        --    enable          => start_stop,         -- enable
+       --     S1              => s1_phy,                -- Input S1 signal
+      --      S3              => s3_phy,                -- Input S3 signal
+     --       control_out     => pwm_duty_input     -- Output for PWM duty cycle control  
+      --  );
 
     -- Instantiate the PWM_GENERATOR to convert integer from current_shift into PWM signal
-    pwm_generator_inst: PWM_GENERATOR
-        Port map (
-            clk => clk_100mhz,
-            reset => reset,
-            duty_input => pwm_duty_input,  -- Input from current_shift integer output
-            pwm_out => pwm_output          -- Output PWM signal to be read by the microcontroller
-        );
+    --pwm_generator_inst: PWM_GENERATOR
+       -- Port map (
+         --   clk => clk_100mhz,
+         --   reset => reset,
+          --  duty_input => pwm_duty_input,  -- Input from current_shift integer output
+       ----     pwm_out => pwm_output          -- Output PWM signal to be read by the microcontroller
+       -- );
         
         
         rgb_drv: SB_RGBA_DRV

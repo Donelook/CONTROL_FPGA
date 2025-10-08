@@ -1,72 +1,81 @@
 Running in Lattice mode
 
-Starting:    C:\lscc\iCEcube2.2020.12\synpbase\bin64\mbin\synplify.exe
+
+Starting:    C:\lscc\iCEcube2.2020.12\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\iCEcube2.2020.12\synpbase
 Hostname:    DESKTOP-42SL8KH
-Date:        Tue Oct 07 00:30:55 2025
+Date:        Wed Oct 08 23:46:44 2025
 Version:     L-2016.09L+ice40
 
-Arguments:   -product synplify_pro ICE40UP5K_PROGRAM_syn.prj
+Arguments:   -product synplify_pro -batch ICE40UP5K_PROGRAM_syn.prj
 ProductType: synplify_pro
 
 
 
 
+
 auto_infer_blackbox is not supported in current product.
+
 log file: "C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\ICE40UP5K_PROGRAM.srr"
+
 Running: ICE40UP5K_PROGRAM_Implmnt in foreground
+
+
 
 Running ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
 
+
 Running: compile (Compile) on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
-# Tue Oct 07 00:30:55 2025
+# Wed Oct 08 23:46:44 2025
+
 
 Running: compile_flow (Compile Process) on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
-# Tue Oct 07 00:30:55 2025
+# Wed Oct 08 23:46:44 2025
+
 
 Running: compiler (Compile Input) on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
-# Tue Oct 07 00:30:55 2025
-Copied C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\synwork\ICE40UP5K_PROGRAM_comp.srs to C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\ICE40UP5K_PROGRAM.srs
+# Wed Oct 08 23:46:44 2025
+
 
 compiler completed
-# Tue Oct 07 00:30:57 2025
+# Wed Oct 08 23:46:45 2025
 
 Return Code: 0
-Run Time:00h:00m:02s
+Run Time:00h:00m:01s
+
 
 Running: multi_srs_gen (Multi-srs Generator) on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
-# Tue Oct 07 00:30:57 2025
+# Wed Oct 08 23:46:45 2025
 
-multi_srs_gen completed
-# Tue Oct 07 00:30:57 2025
+Up-To-Date: multi_srs_gen. No run necessary
 
-Return Code: 0
-Run Time:00h:00m:00s
-Copied C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\synwork\ICE40UP5K_PROGRAM_mult.srs to C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\ICE40UP5K_PROGRAM.srs
 Complete: Compile Process on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
 
+
 Running: premap (Pre-mapping) on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
-# Tue Oct 07 00:30:57 2025
+# Wed Oct 08 23:46:45 2025
 
-premap completed
-# Tue Oct 07 00:30:57 2025
+Up-To-Date: premap. No run necessary
 
-Return Code: 0
-Run Time:00h:00m:00s
 Complete: Compile on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
 
+
 Running: map (Map) on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
-# Tue Oct 07 00:30:57 2025
+# Wed Oct 08 23:46:45 2025
+
+License granted for 4 parallel jobs
+
 
 Running: fpga_mapper (Map & Optimize) on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
-# Tue Oct 07 00:30:57 2025
-Copied C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\synwork\ICE40UP5K_PROGRAM_m.srm to C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\ICE40UP5K_PROGRAM.srm
+# Wed Oct 08 23:46:45 2025
 
-fpga_mapper completed with warnings
-# Tue Oct 07 00:31:00 2025
+Up-To-Date: fpga_mapper. No run necessary
 
-Return Code: 1
-Run Time:00h:00m:03s
 Complete: Map on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
+
 Complete: Logic Synthesis on ICE40UP5K_PROGRAM_syn|ICE40UP5K_PROGRAM_Implmnt
+
 exit status=0
+
+exit status=0
+
