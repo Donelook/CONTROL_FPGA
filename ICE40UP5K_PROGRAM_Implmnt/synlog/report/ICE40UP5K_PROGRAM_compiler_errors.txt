@@ -1,4 +1,6 @@
-@E: CD242 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\MAIN.vhd":275:6:275:8|Expecting ;
-@E: Parse errors encountered - exiting
-@E::VHDL compiler failed
+@E: CL219 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":57:11:57:18|Multiple non-tristate drivers for net hc_state(idle) in delay_measurement
+@E: CL229 :"C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\delay_measurement.vhd":57:11:57:18|Unresolved tristate drivers for net hc_state(idle) in delay_measurement
+@E: MF420 |Netlist read from file C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\synwork\layer0.srs failed
+@E: Could not find top level cell: MAIN in library work
+@E::Error while linking, aborting.
 

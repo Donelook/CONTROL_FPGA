@@ -1,0 +1,36 @@
+timestamp=1760568301452
+
+[~A]
+ModifyID=1
+Version=74
+
+[~MFT]
+0=16|0delay.mgf|6167|136
+1=4|1delay.mgf|5041|3285
+3=4|3delay.mgf|2368|1455
+
+[delay_measurement]
+A/behavioral=A/Behavioral 21|../src/delay_measurement.vhd|17|1*5041
+BinW64/behavioral=3*2368
+I=0*723
+I/behavioral=I/Behavioral 0*6167
+M=11|2|vf5|1760568301415|../src/delay_measurement.vhd|0*232*0xaab4f11d32e1c052d9be6f4b5d708e35203185e4|0*624*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|2|vf5|1760568301450|../src/delay_measurement.vhd|0*972*0x09f23e6efcf38edc6d56235eb441e6be94db6e9f|0*3867*0x20116f55b147878295aeff36dce7fc50
+R=../src/delay_measurement.vhd|6
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|8fd5eefdc14925705c72bd6c1b916ed398d227b5cb7dde9fddbbd51bfff92a375dc5b3cdd0bdb1bd45e99319c1d8acbe
+Version/behavioral=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4405f324289dcdfe6be43560881161c00
+
+[timer]
+A/behavioral=A/Behavioral 21|../src/timer.vhd|15|1*3285
+BinW64/behavioral=3*1455
+I=0*4721
+I/behavioral=I/Behavioral 0*5919
+M=11|2|vf5|1760568301436|../src/timer.vhd|0*4328*0x27660134602c6ae9113513f195c9237a41c3ffeb|0*4646*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|2|vf5|1760568301438|../src/timer.vhd|0*4958*0xa8a36569c7a6a93cca8ccfdc502bf2bf902debad|0*5830*0x20116f55b147878295aeff36dce7fc50
+R=../src/timer.vhd|5
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|c2ae8f0b7b95b6d69da7be83d99f8f49b9055658df942d73e94e5ef4b35d2ac0
+Version/behavioral=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4f014e9f627bef8e4a2ea68d953360c6f
+
+[~U]
+delay_measurement=11|0*0|
+timer=11|0*4116|

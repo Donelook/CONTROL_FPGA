@@ -1,0 +1,25 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Built-in symbols=0
+delay=0
+[COMPILESTATUS|.\src\delay_measurement.vhd]
+FileTimeLow=3405860684
+FileTimeHigh=31211043
+Status=Compiled
+[COMPILESTATUS|.\src\timer.vhd]
+FileTimeLow=445080611
+FileTimeHigh=31193742
+Status=Compiled
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|.\delay\delay.adf|]
+Path=/delay_measurement
+[Gui config]
+RunFor=10 us
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\delay\src/delay_measurement.vhd|]
+CurrentLine=16
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+ZoomFactor=0
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////7cBAACZAAAA/wkAADoEAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAAAAAAAAAAAAA=="

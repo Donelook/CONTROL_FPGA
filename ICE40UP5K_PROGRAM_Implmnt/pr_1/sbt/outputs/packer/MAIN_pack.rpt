@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Oct 8 2025 23:57:48
+* File Generated:     Oct 16 2025 00:42:29
 
 * Purpose:            General info of design implementation
 
@@ -27,8 +27,8 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  380
-    LUTs:                 662
+    FFs:                  365
+    LUTs:                 629
     RAMs:                 0
     IOBs:                 13
     GBs:                  4
@@ -46,12 +46,12 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 668/5280
-        Combinational Logic Cells: 288      out of   5280      5.45455%
-        Sequential Logic Cells:    380      out of   5280      7.19697%
-        Logic Tiles:               139      out of   660       21.0606%
+    Total Logic Cells: 633/5280
+        Combinational Logic Cells: 268      out of   5280      5.07576%
+        Sequential Logic Cells:    365      out of   5280      6.91288%
+        Logic Tiles:               128      out of   660       19.3939%
     Registers: 
-        Logic Registers:           380      out of   5280      7.19697%
+        Logic Registers:           365      out of   5280      6.91288%
         IO Registers:              0        out of   480       0
     Block RAMs:                    0        out of   30        0%
     Warm Boots:                    0        out of   1         0%
@@ -105,7 +105,7 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                      
     -------------  -------  ---------  ------  -----------                                      
-    0              2        IO         363     red_c_g                                          
-    3              0                   31      delay_measurement_inst.delay_tr_timer.N_138_i_g  
-    1              0                   31      delay_measurement_inst.delay_hc_timer.N_136_i_g  
-    5              2                   30      delay_measurement_inst.delay_tr_timer.N_139_i_g  
+    0              2        IO         349     red_c_g                                          
+    3              0                   31      delay_measurement_inst.delay_tr_timer.N_255_i_g  
+    1              0                   31      delay_measurement_inst.delay_hc_timer.N_253_i_g  
+    5              2                   30      delay_measurement_inst.delay_tr_timer.N_256_i_g  
