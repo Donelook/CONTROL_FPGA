@@ -6,13 +6,13 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 365 clock pin(s) of sequential element(s)
-0 instances converted, 365 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 370 clock pin(s) of sequential element(s)
+0 instances converted, 370 sequential instances remain driven by gated/generated clocks
 
 ================================================================================================================== Gated/Generated Clocks ===================================================================================================================
 Clock Tree ID     Driving Element                                 Drive Element Type     Fanout     Sample Instance            Explanation                                                                                                                   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       pll_inst.ICE40_MAIN_PROGRAM_100MHZ_pll_inst     SB_PLL40_CORE          365        SB_DFF_inst_PH1_MAX_D1     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0001       pll_inst.ICE40_MAIN_PROGRAM_100MHZ_pll_inst     SB_PLL40_CORE          370        SB_DFF_inst_PH1_MAX_D1     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
 =============================================================================================================================================================================================================================================================
 
 

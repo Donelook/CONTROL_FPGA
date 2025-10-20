@@ -2,74 +2,73 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-
 entity delay_measurement is
     Port (
         clk             : in  std_logic;  -- 100 MHz clock
         reset           : in  std_logic;  -- Synchronous reset (active high)
-        delay_tr_signal : in  std_logic;  -- TR signal for measuring period
-        delay_hc_signal : in  std_logic;  -- HC signal for measuring period
-        delay_tr        : out integer;    -- Measured period for TR
-        delay_hc        : out integer     -- Measured period for HC
+        delay_tr_signal : in  std_logic;  -- TR signal for measuring period (async to clk)
+        delay_hc_signal : in  std_logic;  -- HC signal for measuring period (async to clk)
+        delay_tr        : out integer;    -- Measured period for TR (ns)
+        delay_hc        : out integer     -- Measured period for HC (ns)
     );
 end delay_measurement;
 
 architecture Behavioral of delay_measurement is
 
     --------------------------------------------------------------------
-    -- Timer component 
+    -- Timer component
     --------------------------------------------------------------------
     component timer is
         Port (
-            clk             : in  std_logic;   -- 100 MHz system clock
-            reset           : in  std_logic;   -- Synchronous reset
-            start_timer     : in  std_logic;   -- Start timer
-            stop_timer      : in  std_logic;   -- Stop timer
-            elapsed_time_ns : out integer      -- Elapsed time in nanoseconds
+            clk             : in  std_logic;  -- 100 MHz system clock
+            reset           : in  std_logic;  -- Synchronous reset
+            start_timer     : in  std_logic;  -- 1-cycle pulse: start
+            stop_timer      : in  std_logic;  -- 1-cycle pulse: stop & latch
+            elapsed_time_ns : out integer     -- Latched elapsed time (ns)
         );
     end component;
 
     --------------------------------------------------------------------
-    -- Instances of the two timer modules (for TR and HC)
+    -- Control / data signals
     --------------------------------------------------------------------
-    signal start_timer_tr  : std_logic := '0';
-    signal stop_timer_tr   : std_logic := '0';
-    signal elapsed_time_tr : integer   := 0;
+    -- TR channel
+    signal start_timer_tr   : std_logic := '0';
+    signal stop_timer_tr    : std_logic := '0';
+    signal elapsed_time_tr  : integer   := 0;
+    signal delay_tr_reg     : integer   := 10;
 
-    signal start_timer_hc  : std_logic := '0';
-    signal stop_timer_hc   : std_logic := '0';
-    signal elapsed_time_hc : integer   := 0;
+    -- HC channel
+    signal start_timer_hc   : std_logic := '0';
+    signal stop_timer_hc    : std_logic := '0';
+    signal elapsed_time_hc  : integer   := 0;
+    signal delay_hc_reg     : integer   := 10;
 
-    -- Actual output signals
-    signal delay_tr_reg : integer := 10;
-    signal delay_hc_reg : integer := 10;
-
-    --------------------------------------------------------------------
-    -- Synchronous edge-detection state machines for TR and HC
-    --------------------------------------------------------------------
+    -- FSM
     type meas_state is (IDLE, WAIT_SECOND_EDGE);
 
-    -- TR signals / state
-    signal tr_state     : meas_state := IDLE;
-    signal prev_tr_sig  : std_logic  := '0';
+    -- TR FSM + edge detect (on synchronized signal)
+    signal tr_state         : meas_state := IDLE;
+    signal tr_sync_0        : std_logic := '0';
+    signal tr_sync_1        : std_logic := '0';
+    signal tr_prev          : std_logic := '0';
 
-    -- HC signals / state
-    signal hc_state     : meas_state := IDLE;
-    signal prev_hc_sig  : std_logic  := '0';
+    -- HC FSM + edge detect (on synchronized signal)
+    signal hc_state         : meas_state := IDLE;
+    signal hc_sync_0        : std_logic := '0';
+    signal hc_sync_1        : std_logic := '0';
+    signal hc_prev          : std_logic := '0';
 
     -- Range clamps
-    constant MIN_MEASURE : integer := 10;       -- Minimum reported time
-    constant MAX_MEASURE : integer := 1000000;  -- Maximum reported time
-attribute syn_noclockbuf : boolean;
-attribute syn_noclockbuf of delay_hc_signal : signal is true;
-attribute syn_noclockbuf of delay_hc_reg : signal is true;
+    constant MIN_MEASURE    : integer := 10;        -- ns
+    constant MAX_MEASURE    : integer := 1_000_000; -- ns
 
 begin
+
     --------------------------------------------------------------------
-    -- Timer Instantiations
+    -- Timer instances
     --------------------------------------------------------------------
     delay_tr_timer: timer
-        Port map (
+        port map (
             clk             => clk,
             reset           => reset,
             start_timer     => start_timer_tr,
@@ -78,7 +77,7 @@ begin
         );
 
     delay_hc_timer: timer
-        Port map (
+        port map (
             clk             => clk,
             reset           => reset,
             start_timer     => start_timer_hc,
@@ -87,116 +86,117 @@ begin
         );
 
     --------------------------------------------------------------------
-    -- PROCESS #1: TR Measurement (fully synchronous)
+    -- 2-FF synchronizers for asynchronous inputs
     --------------------------------------------------------------------
     process(clk)
     begin
         if rising_edge(clk) then
             if reset = '1' then
-                -- Reset everything
-               -- tr_state      <= IDLE;
-                prev_tr_sig   <= '0';
+                tr_sync_0 <= '0';
+                tr_sync_1 <= '0';
+                hc_sync_0 <= '0';
+                hc_sync_1 <= '0';
+            else
+                tr_sync_0 <= delay_tr_signal;
+                tr_sync_1 <= tr_sync_0;
+
+                hc_sync_0 <= delay_hc_signal;
+                hc_sync_1 <= hc_sync_0;
+            end if;
+        end if;
+    end process;
+
+    --------------------------------------------------------------------
+    -- TR measurement FSM (1st rising edge = start pulse, 2nd = stop pulse)
+    --------------------------------------------------------------------
+    process(clk)
+        variable tr_rising : boolean;
+    begin
+        if rising_edge(clk) then
+            if reset = '1' then
+                tr_state       <= IDLE;
+                tr_prev        <= '0';
                 start_timer_tr <= '0';
                 stop_timer_tr  <= '0';
-                delay_tr_reg  <= MIN_MEASURE;
+                delay_tr_reg   <= MIN_MEASURE;
             else
-                -- Latch previous cycle's TR signal to detect rising edge
-                prev_tr_sig <= delay_tr_signal;
-				   start_timer_tr <= '0';
-                   stop_timer_tr  <= '0';
+                -- edge detect (synchronized signal)
+                tr_rising := (tr_prev = '0') and (tr_sync_1 = '1');
+                tr_prev   <= tr_sync_1;
 
+                -- default: deassert pulses
+                start_timer_tr <= '0';
+                stop_timer_tr  <= '0';
 
-                -- Main TR state machine
                 case tr_state is
-
                     when IDLE =>
-                        -- If we detect a rising edge of delay_tr_signal
-                        if (prev_tr_sig = '0') and (delay_tr_signal = '1') then
-                            -- Start the timer
-                            start_timer_tr <= '1';
-                           -- stop_timer_tr  <= '0';
+                        if tr_rising then
+                            start_timer_tr <= '1';         -- 1-cycle start pulse
                             tr_state       <= WAIT_SECOND_EDGE;
-                        else
-                            -- Keep outputs inactive
-                           -- start_timer_tr <= '0';
-                           -- stop_timer_tr  <= '0';
-                           -- tr_state       <= IDLE;
                         end if;
 
                     when WAIT_SECOND_EDGE =>
-                        -- If we detect another rising edge, stop the timer
-                        if (prev_tr_sig = '0') and (delay_tr_signal = '1') then
-                            --start_timer_tr <= '0';
-                            stop_timer_tr  <= '1';
-                            tr_state       <= IDLE;  -- measurement done, go back to IDLE  
-							
-							-- Check the measured time each cycle
-                -- (Clamp to [10, 1_000_000], store in delay_tr_reg)
-                			if elapsed_time_tr > MIN_MEASURE and elapsed_time_tr < MAX_MEASURE then
-                   				 delay_tr_reg <= elapsed_time_tr;
-               				 elsif elapsed_time_tr > MAX_MEASURE then
-                    			delay_tr_reg <= MAX_MEASURE;
-                			end if;
-                        else
-                            -- Remain in this state, keep timer running
-                           -- start_timer_tr <= '1';
-                           -- stop_timer_tr  <= '0';
-                            --tr_state       <= WAIT_SECOND_EDGE;
+                        if tr_rising then
+                            stop_timer_tr <= '1';          -- 1-cycle stop pulse
+                            -- Latch the measurement on stop:
+                            if (elapsed_time_tr > MIN_MEASURE) and (elapsed_time_tr < MAX_MEASURE) then
+                                delay_tr_reg <= elapsed_time_tr;
+                            elsif elapsed_time_tr >= MAX_MEASURE then
+                                delay_tr_reg <= MAX_MEASURE;
+                            else
+                                delay_tr_reg <= MIN_MEASURE;
+                            end if;
+                            tr_state <= IDLE;
                         end if;
 
                     when others =>
                         tr_state <= IDLE;
-
                 end case;
             end if;
         end if;
     end process;
 
     --------------------------------------------------------------------
-    -- PROCESS #2: HC Measurement (fully synchronous)
+    -- HC measurement FSM (same as TR)
     --------------------------------------------------------------------
     process(clk)
+        variable hc_rising : boolean;
     begin
         if rising_edge(clk) then
             if reset = '1' then
-               -- hc_state      <= IDLE;
-                prev_hc_sig   <= '0';
+                hc_state       <= IDLE;
+                hc_prev        <= '0';
                 start_timer_hc <= '0';
                 stop_timer_hc  <= '0';
-                delay_hc_reg  <= MIN_MEASURE;
+                delay_hc_reg   <= MIN_MEASURE;
             else
-                -- Edge detection
-                prev_hc_sig <= delay_hc_signal;
+                -- edge detect (synchronized signal)
+                hc_rising := (hc_prev = '0') and (hc_sync_1 = '1');
+                hc_prev   <= hc_sync_1;
 
-                -- Clamp and store measurement
-                if elapsed_time_hc > MIN_MEASURE and elapsed_time_hc < MAX_MEASURE then
-                    delay_hc_reg <= elapsed_time_hc;
-                elsif elapsed_time_hc > MAX_MEASURE then
-                    delay_hc_reg <= MAX_MEASURE;
-                end if;
+                -- default: deassert pulses
+                start_timer_hc <= '0';
+                stop_timer_hc  <= '0';
 
                 case hc_state is
-
                     when IDLE =>
-                        if (prev_hc_sig = '0') and (delay_hc_signal = '1') then
-                            start_timer_hc <= '1';
-                            stop_timer_hc  <= '0';
+                        if hc_rising then
+                            start_timer_hc <= '1';         -- 1-cycle start pulse
                             hc_state       <= WAIT_SECOND_EDGE;
-                        else
-                            start_timer_hc <= '0';
-                            stop_timer_hc  <= '0';
-                            hc_state       <= IDLE;
                         end if;
 
                     when WAIT_SECOND_EDGE =>
-                        if (prev_hc_sig = '0') and (delay_hc_signal = '1') then
-                            start_timer_hc <= '0';
-                            stop_timer_hc  <= '1';
-                            hc_state       <= IDLE;
-                        else
-                            start_timer_hc <= '1';
-                            stop_timer_hc  <= '0';
-                            hc_state       <= WAIT_SECOND_EDGE;
+                        if hc_rising then
+                            stop_timer_hc <= '1';          -- 1-cycle stop pulse
+                            -- Latch the measurement on stop:
+                            if (elapsed_time_hc > MIN_MEASURE) and (elapsed_time_hc < MAX_MEASURE) then
+                                delay_hc_reg <= elapsed_time_hc;
+                            elsif elapsed_time_hc >= MAX_MEASURE then
+                                delay_hc_reg <= MAX_MEASURE;
+                            else
+                                delay_hc_reg <= MIN_MEASURE;
+                            end if;
+                            hc_state <= IDLE;
                         end if;
 
                     when others =>
@@ -207,7 +207,7 @@ begin
     end process;
 
     --------------------------------------------------------------------
-    -- Drive the outputs from our registered signals
+    -- Always drive outputs from the registered values
     --------------------------------------------------------------------
     delay_tr <= delay_tr_reg;
     delay_hc <= delay_hc_reg;

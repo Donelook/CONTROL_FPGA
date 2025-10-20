@@ -21,7 +21,7 @@ architecture Behavioral of stoper is
     -- We'll cap the maximum target time at 1,000,000 ns = 1 ms
     -- and floor it at 10 ns
     constant MAX_TIME : integer := 1_000_000;
-    constant MIN_TIME : integer := 10;
+    constant MIN_TIME : integer := 100;
 
     -- Internal signals
     signal accumulated_time : integer range 0 to MAX_TIME := 0;
@@ -40,9 +40,9 @@ begin
             
                 -- Asynchronous or synchronous reset (active high)
                 -- Move to IDLE and clear all relevant signals
-                --stoper_state     <= IDLE;
+                stoper_state     <= IDLE;
                 accumulated_time <= 0;
-                target_time      <= 0;
+                target_time      <= MIN_TIME;
                 time_passed      <= '0';
 
             elsif rising_edge(clk) then -- normal operation

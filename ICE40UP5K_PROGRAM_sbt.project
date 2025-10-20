@@ -6,9 +6,9 @@ DevicePower=
 NetlistFile=ICE40UP5K_PROGRAM_Implmnt/ICE40UP5K_PROGRAM.edf
 AdditionalEDIFFile=
 IPEDIFFile=
-DesignLib=ICE40UP5K_PROGRAM_Implmnt/pr_1/sbt/netlist/oadb-MAIN
-DesignView=_rt
-DesignCell=MAIN
+DesignLib=
+DesignView=
+DesignCell=
 SynthesisSDCFile=ICE40UP5K_PROGRAM_Implmnt/ICE40UP5K_PROGRAM.scf
 UserPinConstraintFile=
 UserSDCFile=
@@ -67,11 +67,11 @@ VHDL2008=False
 VerilogIncludeSearchPath=
 
 [tool options]
-PlacerEffortLevel=high
+PlacerEffortLevel=std
 PlacerAutoLutCascade=yes
 PlacerAutoRamCascade=yes
 PlacerPowerDriven=no
-PlacerAreaDriven=no
+PlacerAreaDriven=yes
 RouteWithTimingDriven=yes
 RouteWithPinPermutation=yes
 BitmapSPIFlashMode=yes

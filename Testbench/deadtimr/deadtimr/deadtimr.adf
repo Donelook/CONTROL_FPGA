@@ -18,7 +18,7 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
-fileopenfolder=C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\Testbench
+fileopenfolder=C:\Users\Michal\Documents\GitHub\CONTROL_FPGA\Testbench\deadtimr\deadtimr\src
 [IMPLEMENTATION]
 UCF=
 [Files]
@@ -45,3 +45,7 @@ UCF=
 .\src\Second_Phase_Control.vhd=VHDL Source Code
 .\src\stoper.vhd=VHDL Source Code
 .\src\timer.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=delay_measurement|behavioral|0
+ShowHide=ShowTopLevel
+Selected=

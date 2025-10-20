@@ -1,0 +1,4 @@
+ERROR COMP96_0059: "Library "sb_ice40_components_syn" not found." "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/Testbench/deadtimr/deadtimr/src/MAIN.vhd" 21 1
+ERROR COMP96_0078: "Unknown identifier "sb_ice40_components_syn"." "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/Testbench/deadtimr/deadtimr/src/MAIN.vhd" 22 5
+ERROR COMP96_0056: "Cannot find referenced entity declaration "MAIN"." "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/Testbench/deadtimr/deadtimr/src/MAIN.vhd" 63 1
+WARNING COMP96_0994: "Multiple architecture "Behavioral" of entity "phase_controller" found in "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/Testbench/deadtimr/deadtimr/src/Second_Phase_Control.vhd", "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/Testbench/deadtimr/deadtimr/src/phase_controller.vhd"." "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/Testbench/deadtimr/deadtimr/src/Second_Phase_Control.vhd" 23 1

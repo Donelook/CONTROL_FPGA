@@ -60,9 +60,9 @@ architecture Behavioral of delay_measurement is
     -- Range clamps
     constant MIN_MEASURE : integer := 10;       -- Minimum reported time
     constant MAX_MEASURE : integer := 1000000;  -- Maximum reported time
-attribute syn_noclockbuf : boolean;
-attribute syn_noclockbuf of delay_hc_signal : signal is true;
-attribute syn_noclockbuf of delay_hc_reg : signal is true;
+--attribute syn_noclockbuf : boolean;
+--attribute syn_noclockbuf of delay_hc_signal : signal is true;
+--attribute syn_noclockbuf of delay_hc_reg : signal is true;
 
 begin
     --------------------------------------------------------------------
@@ -93,49 +93,42 @@ begin
     begin
         if rising_edge(clk) then
             if reset = '1' then
-                -- Reset everything
-               -- tr_state      <= IDLE;
+                tr_state <= IDLE;
                 prev_tr_sig   <= '0';
                 start_timer_tr <= '0';
                 stop_timer_tr  <= '0';
                 delay_tr_reg  <= MIN_MEASURE;
             else
-                -- Latch previous cycle's TR signal to detect rising edge
+                -- Edge detection
                 prev_tr_sig <= delay_tr_signal;
 
-                -- Check the measured time each cycle
-                -- (Clamp to [10, 1_000_000], store in delay_tr_reg)
+                -- Clamp and store measurement
                 if elapsed_time_tr > MIN_MEASURE and elapsed_time_tr < MAX_MEASURE then
                     delay_tr_reg <= elapsed_time_tr;
                 elsif elapsed_time_tr > MAX_MEASURE then
                     delay_tr_reg <= MAX_MEASURE;
                 end if;
 
-                -- Main TR state machine
                 case tr_state is
 
                     when IDLE =>
-                        -- If we detect a rising edge of delay_tr_signal
                         if (prev_tr_sig = '0') and (delay_tr_signal = '1') then
-                            -- Start the timer
                             start_timer_tr <= '1';
                             stop_timer_tr  <= '0';
                             tr_state       <= WAIT_SECOND_EDGE;
                         else
-                            -- Keep outputs inactive
                             start_timer_tr <= '0';
                             stop_timer_tr  <= '0';
                             tr_state       <= IDLE;
                         end if;
 
                     when WAIT_SECOND_EDGE =>
-                        -- If we detect another rising edge, stop the timer
                         if (prev_tr_sig = '0') and (delay_tr_signal = '1') then
                             start_timer_tr <= '0';
                             stop_timer_tr  <= '1';
-                            tr_state       <= IDLE;  -- measurement done, go back to IDLE
+                            tr_state       <= IDLE;
+                            delay_tr <= delay_tr_reg;
                         else
-                            -- Remain in this state, keep timer running
                             start_timer_tr <= '1';
                             stop_timer_tr  <= '0';
                             tr_state       <= WAIT_SECOND_EDGE;
@@ -143,7 +136,6 @@ begin
 
                     when others =>
                         tr_state <= IDLE;
-
                 end case;
             end if;
         end if;
@@ -156,7 +148,7 @@ begin
     begin
         if rising_edge(clk) then
             if reset = '1' then
-               -- hc_state      <= IDLE;
+               hc_state      <= IDLE;
                 prev_hc_sig   <= '0';
                 start_timer_hc <= '0';
                 stop_timer_hc  <= '0';
@@ -190,6 +182,7 @@ begin
                             start_timer_hc <= '0';
                             stop_timer_hc  <= '1';
                             hc_state       <= IDLE;
+                            delay_hc <= delay_hc_reg;
                         else
                             start_timer_hc <= '1';
                             stop_timer_hc  <= '0';
@@ -206,7 +199,7 @@ begin
     --------------------------------------------------------------------
     -- Drive the outputs from our registered signals
     --------------------------------------------------------------------
-    delay_tr <= delay_tr_reg;
-    delay_hc <= delay_hc_reg;
+    --delay_tr <= delay_tr_reg;
+    --delay_hc <= delay_hc_reg;
 
 end Behavioral;

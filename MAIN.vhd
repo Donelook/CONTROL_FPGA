@@ -50,11 +50,11 @@ entity MAIN is
         
         rgb_r              : out std_logic;
         rgb_g              : out std_logic;
-        rgb_b              : out std_logic
+        rgb_b              : out std_logic;
         
       --  T01  			: out std_logic;   -- test signal
-       -- T12    			: out std_logic;   -- test signal
-      --  T23    			: out std_logic;   -- test signal
+        T12    			: out std_logic;   -- test signal
+        T23    			: out std_logic   -- test signal
        -- T45    			: out std_logic		-- test signal
       --  clock_output		: out std_logic
     );
@@ -311,7 +311,7 @@ begin
 			C => clk_100mhz, -- Clock
 			D => delay_tr_d1 -- Data
 		);
-		
+		T23 <=  delay_tr_d2;
 	SB_DFF_inst_DELAY_HC1: SB_DFF
 		port map (
 			Q => delay_hc_d1, -- Registered Output
@@ -376,7 +376,7 @@ begin
             S1              => s1_phy,                 -- Output to transistor S1
             S2              => s2_phy,                 -- Output to transistor S2
         	T01  			=> shift_flag_start,
-        	T12  			=> OPEN,    			
+        	T12  			=> T12,    			
         	T23  			=> OPEN,    			
         	T45  			=> OPEN    			
         );

@@ -1,30 +1,30 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
-#--  Project file C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt\scratchproject.prs
+#--  Project file C:\Users\Michal\Documents\GitHub\CONTROL_FPGA\ICE40UP5K_PROGRAM_Implmnt\scratchproject.prs
 
 #project files
-add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/MAIN.vhd"
-add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/PI_CONTROLLER.vhd"
-add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/PWM_GENERATOR.vhd"
-add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/current_shift.vhd"
-add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/delay_measurement.vhd"
-add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/phase_controller_second.vhd"
-add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/phase_controller.vhd"
-add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/stoper.vhd"
-add_file -vhdl -lib work "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/timer.vhd"
-add_file -verilog "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/ICE40_MAIN_PROGRAM_100MHZ_pll.v"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/MAIN.vhd"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/PI_CONTROLLER.vhd"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/PWM_GENERATOR.vhd"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/current_shift.vhd"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/delay_measurement.vhd"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/phase_controller_second.vhd"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/phase_controller.vhd"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/stoper.vhd"
+add_file -vhdl -lib work "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/timer.vhd"
+add_file -verilog "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/ICE40_MAIN_PROGRAM_100MHZ_pll.v"
 
 
 
 #implementation: "ICE40UP5K_PROGRAM_Implmnt"
-impl -add "C:\Users\Michal\Documents\Magisterka\Magisterka dokumenty wyjsciowe\FPGA\PROGRAM\CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main\ICE40UP5K_PROGRAM_Implmnt" -type fpga
+impl -add C:\Users\Michal\Documents\GitHub\CONTROL_FPGA\ICE40UP5K_PROGRAM_Implmnt -type fpga
 
 #
 #implementation attributes
 
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/}
+set_option -include_path {C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/}
 
 #device options
 set_option -technology SBTiCE40UP
@@ -77,5 +77,5 @@ set_option -vhdl2008 1
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/Michal/Documents/Magisterka/Magisterka dokumenty wyjsciowe/FPGA/PROGRAM/CONTROL_FPGA_QSW_DC_DC_10KW_FPGA_VHDL-main/ICE40UP5K_PROGRAM_Implmnt/ICE40UP5K_PROGRAM.edf"
+project -result_file "C:/Users/Michal/Documents/GitHub/CONTROL_FPGA/ICE40UP5K_PROGRAM_Implmnt/ICE40UP5K_PROGRAM.edf"
 impl -active "ICE40UP5K_PROGRAM_Implmnt"
